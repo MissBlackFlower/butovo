@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -28,9 +28,40 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+// mixins
+
++font(Geneva, Geneva)
+
+=Geneva
+	font-family: "Geneva", Arial, serif
+
+// extend
+.in
+	padding: 0 15px
+	margin: 0 auto
+	max-width: 920px
+	+clr
+
+%in
+	@extend .in
+
+// variables
+$white: #fff
+$black: #000
+$red: #ff0000
+$red_dark: #C1272D
+$gray: #b3b3b3
+$gray_l: #ccc
+$gray_strip: #f0f1f2
+$gray_table: $gray_strip
+$c_info: #68666b
+$footer_gray: #808080
+
+// body
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
+	+Geneva
+	font-size: 24px
 	line-height: 1.4
-	
+	+font-smoothing(antialiased)
+
 // common blocks

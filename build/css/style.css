@@ -31,7 +31,11 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: Geneva; src: url("fonts/Geneva.eot"); src: url("fonts/Geneva.eot?#iefix") format("embedded-opentype"), url("fonts/Geneva.woff2") format("woff2"), url("fonts/Geneva.woff") format("woff"), url("fonts/Geneva.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.in { padding: 0 15px; margin: 0 auto; max-width: 920px; *zoom: 1; }
+.in:after { content: " "; display: table; clear: both; }
+
+body { font-family: "Geneva", Arial, serif; font-size: 24px; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
