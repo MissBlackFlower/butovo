@@ -31,26 +31,31 @@
 // mixins
 
 +font(Geneva, Geneva)
++font(proximanovabold, proximanovabold)
++font(proximanovasemibold, proximanovasemibold)
++font(proximanovaregular, proximanovabregular)
 
 =Geneva
-	font-family: "Geneva", Arial, serif
+	font-family: "Geneva", Tahoma, serif
+=prox-b
+	font-family: "proximanovabold", Arial, serif
+=prox-s
+	font-family: "proximanovasemibold", Arial, serif
+=prox-r
+	font-family: "proximanovaregular", Arial, serif
 
-// extend
-.in
+// center
+.out
 	padding: 0 15px
 	margin: 0 auto
-	max-width: 920px
+	max-width: 1500px
 	+clr
-
-%in
-	@extend .in
 
 // variables
 $white: #fff
 $black: #000
 $red: #ff0000
-$red_dark: #C1272D
-$gray: #b3b3b3
+$gray_dark: #2b2b2b
 $gray_l: #ccc
 $gray_strip: #f0f1f2
 $gray_table: $gray_strip
@@ -63,5 +68,27 @@ body
 	font-size: 24px
 	line-height: 1.4
 	+font-smoothing(antialiased)
-
-// common blocks
+// common block
+.header
+	width: 100%
+	&__logo
+		float: left
+	&__menu
+		float: left
+		padding-left: 4%
+	&__list
+	&__cell
+		width: 20%
+		float: left
+	&__icon
+		display: inline-block
+		vertical-align: middle
+	@each $s in key,graf,chat,diagram,letter,news,case,query,roller,card
+		.icon_#{$s}
+			+s(#{$s})
+	&__link
+		padding-left: 5px
+		+prox-r
+		font-size: 12px
+		line-height: 2
+		color: $gray_dark

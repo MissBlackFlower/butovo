@@ -32,10 +32,32 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-skrill:before { content: ""; }
 
 @font-face { font-family: Geneva; src: url("fonts/Geneva.eot"); src: url("fonts/Geneva.eot?#iefix") format("embedded-opentype"), url("fonts/Geneva.woff2") format("woff2"), url("fonts/Geneva.woff") format("woff"), url("fonts/Geneva.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.in { padding: 0 15px; margin: 0 auto; max-width: 920px; *zoom: 1; }
-.in:after { content: " "; display: table; clear: both; }
+@font-face { font-family: proximanovabold; src: url("fonts/proximanovabold.eot"); src: url("fonts/proximanovabold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovabold.woff2") format("woff2"), url("fonts/proximanovabold.woff") format("woff"), url("fonts/proximanovabold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: proximanovasemibold; src: url("fonts/proximanovasemibold.eot"); src: url("fonts/proximanovasemibold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovasemibold.woff2") format("woff2"), url("fonts/proximanovasemibold.woff") format("woff"), url("fonts/proximanovasemibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: proximanovaregular; src: url("fonts/proximanovabregular.eot"); src: url("fonts/proximanovabregular.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovabregular.woff2") format("woff2"), url("fonts/proximanovabregular.woff") format("woff"), url("fonts/proximanovabregular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.out { padding: 0 15px; margin: 0 auto; max-width: 1500px; *zoom: 1; }
+.out:after { content: " "; display: table; clear: both; }
 
-body { font-family: "Geneva", Arial, serif; font-size: 24px; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+body { font-family: "Geneva", Tahoma, serif; font-size: 24px; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
+.header { width: 100%; }
+.header__logo { float: left; }
+.header__menu { float: left; padding-left: 4%; }
+.header__cell { width: 20%; float: left; }
+.header__icon { display: inline-block; vertical-align: middle; }
+.header .icon_key { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: 0px -43px; }
+.header .icon_graf { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: -48px -20px; }
+.header .icon_chat { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: 0px 0px; }
+.header .icon_diagram { background-image: url("../img/icons.png"); width: 20px; height: 16px; background-position: -48px 0px; }
+.header .icon_letter { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -48px -43px; }
+.header .icon_news { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -72px 0px; }
+.header .icon_case { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: 0px -22px; }
+.header .icon_query { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: -24px -22px; }
+.header .icon_roller { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -24px 0px; }
+.header .icon_card { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -24px -43px; }
+.header__link { padding-left: 5px; font-family: "proximanovaregular", Arial, serif; font-size: 12px; line-height: 2; color: #2b2b2b; }
+
+.bg_sky { overflow: hidden; padding-top: 4%; background: url(../img/sky.png) top center no-repeat; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
