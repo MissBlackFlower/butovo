@@ -32,33 +32,42 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-skrill:before { content: ""; }
 
 @font-face { font-family: Geneva; src: url("fonts/Geneva.eot"); src: url("fonts/Geneva.eot?#iefix") format("embedded-opentype"), url("fonts/Geneva.woff2") format("woff2"), url("fonts/Geneva.woff") format("woff"), url("fonts/Geneva.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: proximanovabold; src: url("fonts/proximanovabold.eot"); src: url("fonts/proximanovabold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovabold.woff2") format("woff2"), url("fonts/proximanovabold.woff") format("woff"), url("fonts/proximanovabold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: proximanovasemibold; src: url("fonts/proximanovasemibold.eot"); src: url("fonts/proximanovasemibold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovasemibold.woff2") format("woff2"), url("fonts/proximanovasemibold.woff") format("woff"), url("fonts/proximanovasemibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: proximanovaregular; src: url("fonts/proximanovabregular.eot"); src: url("fonts/proximanovabregular.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovabregular.woff2") format("woff2"), url("fonts/proximanovabregular.woff") format("woff"), url("fonts/proximanovabregular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: ProximaNovaBold; src: url("fonts/ProximaNovaBold.eot"); src: url("fonts/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaBold.woff2") format("woff2"), url("fonts/ProximaNovaBold.woff") format("woff"), url("fonts/ProximaNovaBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: ProximaNovaSemibold; src: url("fonts/ProximaNovaSemibold.eot"); src: url("fonts/ProximaNovaSemibold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaSemibold.woff2") format("woff2"), url("fonts/ProximaNovaSemibold.woff") format("woff"), url("fonts/ProximaNovaSemibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: ProximaNovaRegular; src: url("fonts/ProximaNovaRegular.eot"); src: url("fonts/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaRegular.woff2") format("woff2"), url("fonts/ProximaNovaRegular.woff") format("woff"), url("fonts/ProximaNovaRegular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
 .out { padding: 0 15px; margin: 0 auto; max-width: 1500px; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
 
-body { font-family: "Geneva", Tahoma, serif; font-size: 24px; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
-
-.header { width: 100%; }
-.header__logo { float: left; }
-.header__menu { float: left; padding-left: 4%; }
-.header__cell { width: 20%; float: left; }
+.header { overflow: hidden; width: 100%; }
+.header__logo { float: left; width: 20%; }
+.header__logo img { float: right; width: 100%; max-width: 155px; }
+.header__menu { float: left; width: 80%; padding-left: 1.9%; }
+.header__list { float: left; padding-right: 2%; }
+.header__cell { margin-top: 7px; }
 .header__icon { display: inline-block; vertical-align: middle; }
-.header .icon_key { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: 0px -43px; }
+.header .icon_key { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: 0px -45px; }
 .header .icon_graf { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: -48px -20px; }
-.header .icon_chat { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: 0px 0px; }
+.header .icon_chat { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -24px 0px; }
 .header .icon_diagram { background-image: url("../img/icons.png"); width: 20px; height: 16px; background-position: -48px 0px; }
-.header .icon_letter { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -48px -43px; }
+.header .icon_letter { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -48px -45px; }
 .header .icon_news { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -72px 0px; }
-.header .icon_case { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: 0px -22px; }
-.header .icon_query { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: -24px -22px; }
-.header .icon_roller { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -24px 0px; }
-.header .icon_card { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -24px -43px; }
-.header__link { padding-left: 5px; font-family: "proximanovaregular", Arial, serif; font-size: 12px; line-height: 2; color: #2b2b2b; }
+.header .icon_case { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: 0px -24px; }
+.header .icon_query { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: -24px -24px; }
+.header .icon_roller { background-image: url("../img/icons.png"); width: 20px; height: 20px; background-position: 0px 0px; }
+.header .icon_card { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -24px -45px; }
+.header__link { padding-left: 6px; font-family: "ProximaNovaRegular", Arial, serif; font-size: 12px; line-height: 1.5; color: #2b2b2b; text-decoration: none; }
+.header__link:hover .header__name { border-bottom: dotted 1px #b9babb; }
+.header__name { border-bottom: solid 1px #b9babb; }
 
-.bg_sky { overflow: hidden; padding-top: 4%; background: url(../img/sky.png) top center no-repeat; }
+.bg_sky { overflow: hidden; padding-top: 4.5%; background: url(../img/sky.png) top left no-repeat; }
 
+.apartments { width: 100%; }
+.apartments__conteiner { width: 80%; max-width: 1140px; margin: auto; }
+.apartments__item { width: 380px; float: left; }
+.apartments__uptitle { font-family: "ProximaNovaRegular", Arial, serif; font-size: 23px; color: #2b2b2b; text-align: left; }
+.apartments__title { font-family: "ProximaNovaBold", Arial, serif; font-size: 40px; font-weight: bold; color: #f8b22b; line-height: 0.835; text-align: left; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 

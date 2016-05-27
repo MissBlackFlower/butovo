@@ -31,19 +31,29 @@
 // mixins
 
 +font(Geneva, Geneva)
-+font(proximanovabold, proximanovabold)
-+font(proximanovasemibold, proximanovasemibold)
-+font(proximanovaregular, proximanovabregular)
++font(ProximaNovaBold, ProximaNovaBold)
++font(ProximaNovaSemibold, ProximaNovaSemibold)
++font(ProximaNovaRegular, ProximaNovaRegular)
 
 =Geneva
 	font-family: "Geneva", Tahoma, serif
 =prox-b
-	font-family: "proximanovabold", Arial, serif
+	font-family: "ProximaNovaBold", Arial, serif
 =prox-s
-	font-family: "proximanovasemibold", Arial, serif
+	font-family: "ProximaNovaSemibold", Arial, serif
 =prox-r
-	font-family: "proximanovaregular", Arial, serif
+	font-family: "ProximaNovaRegular", Arial, serif
+// variables
+$white: #fff
+$black: #000
+$red: #ff0000
+$gray_dark: #2b2b2b
 
+// body
+body
+	+font-smoothing(antialiased)
+
+// common block
 // center
 .out
 	padding: 0 15px
@@ -51,35 +61,26 @@
 	max-width: 1500px
 	+clr
 
-// variables
-$white: #fff
-$black: #000
-$red: #ff0000
-$gray_dark: #2b2b2b
-$gray_l: #ccc
-$gray_strip: #f0f1f2
-$gray_table: $gray_strip
-$c_info: #68666b
-$footer_gray: #808080
-
-// body
-body
-	+Geneva
-	font-size: 24px
-	line-height: 1.4
-	+font-smoothing(antialiased)
-// common block
+// header
 .header
+	overflow: hidden
 	width: 100%
 	&__logo
 		float: left
+		width: 20%
+		img
+			float: right
+			width: 100%
+			max-width: 155px
 	&__menu
 		float: left
-		padding-left: 4%
+		width: 80%
+		padding-left: 1.9%
 	&__list
-	&__cell
-		width: 20%
 		float: left
+		padding-right: 2%
+	&__cell
+		margin-top: 7px
 	&__icon
 		display: inline-block
 		vertical-align: middle
@@ -87,8 +88,18 @@ body
 		.icon_#{$s}
 			+s(#{$s})
 	&__link
-		padding-left: 5px
+		padding-left: 6px
 		+prox-r
 		font-size: 12px
-		line-height: 2
+		line-height: 1.5
 		color: $gray_dark
+		text-decoration: none
+		&:hover
+			.header__name
+				border-bottom: dotted 1px #b9babb
+	&__name
+		border-bottom: solid 1px #b9babb
+// end header
+// footer
+
+// end footer
