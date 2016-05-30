@@ -46,22 +46,27 @@
 	<div class="apartments">
 		<div class="apartments__conteiner">
 			<div class="apartments__item">
-				<h3 class="apartments__uptitle">Жилой комплекс</h3>
-				<h1 class="apartments__title">Новые<br>Ватутинки</h1>
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Новые<br>Ватутинки</h1>
+				</div>
 				<div class="apartments__view">
-					<img class="apartments__img" src="img/vatut.png" alt="Новые Ватутинки">
-					<div class="apartments__closer">
-						<img class="apartments__little-img" src="img/vatut__little.png">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/vatut.png" alt="Новые Ватутинки"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
 					</div>
+				</div>
 					<form class="apartments__form" action="index.html" method="post">
 						<span class="apartments__mail">
-							<input class="apartments__input" type="email" id="email"/>
-							<label class="apartments__label" for="email">
+							<input class="apartments__input" type="email" id="email" onchange="document.getElementById('label_email').style.display = this.checked ? 'block' : 'none'"/>
+							<label class="apartments__label" for="email" id="label_email" >
 								<i class="apartments__label-img icon_email"></i>
-								<span class="apartments__label-text">Электронная почта</span>
+								<span class="apartments__label-text">Электронная&nbsp;почта</span>
 							</label>
 						</span>
-						<span class="apartments__mail">
+						<span class="apartments__password">
 							<input class="apartments__input" type="password" id="password"/>
 							<label class="apartments__label" for="password">
 								<i class="apartments__label-img icon_password"></i>
@@ -78,7 +83,6 @@
 						<h4 class="apartments__tel"><span></span></h4>
 						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#"></a>
 					</div>
-				</div>
 			</div>
 		</div>
 		<div class="apartments__arrows">

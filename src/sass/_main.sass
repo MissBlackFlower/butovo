@@ -12,15 +12,88 @@
   &__item
     width: 380px
     float: left
+  &__titles
+    display: block
+    width: 320px
+    margin: auto
   &__uptitle
+    padding: 0 0 5px 2px
     +prox-r
     font-size: 23px
+    line-height: 0.8
     color: rgb(43, 43, 43)
     text-align: left
   &__title
+    padding-bottom: 5px
     +prox-b
     font-size: 40px
-    font-weight: bold
+    line-height: 0.85
     color: rgb(248, 178, 43)
-    line-height: 0.835
+    font-weight: bold
+    text-align: left
+  &__view
+    @extend .apartments__titles
+  &__img
+    position: relative
+    &:hover
+      cursor: pointer
+      .apartments__closer
+        display: block
+  &__closer
+    display: none
+    position: absolute
+    width: 124px
+    height: 124px
+    left: 0
+    bottom: 0
+    background-color: #fff
+    border-radius: 100%
+  &__little-img
+    position: absolute
+    width: 120px
+    height: 120px
+    left: 0
+    bottom: 2px
+    border-radius: 100%
+  &__form
+    display: block
+    width: 286px
+    margin: auto
+    padding: 20px
+    background-color: #f0f0f0
+    border-radius: 10px
+  &__mail,
+  &__password
+    width: 100%
+    position: relative
+  &__input
+    width: 100%
+    height: 36px
+    margin-bottom: 5px
+    padding: 0 10px
+    border-radius: 6px
+    border: 1px solid rgb(212, 212, 212)
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.004),inset 0px 1px 7px 0px rgba(0, 0, 1, 0.09)
+  &__label
+    position: absolute
+    padding: 0 10px
+    width: 100%
+    left: 0
+    top: 0
+    line-height: 32px
+  &__label-img
+    float: left
+  @each $s in email,password
+    .icon_#{$s}
+      display: inline-block
+      +s(#{$s})
+  &__label-text
+    display: inline-block
+    overflow: hidden
+    width: auto
+    font-size: 13px
+    line-height: 2
+    color: rgba(43, 43, 43, 0.302)
+    +Geneva
     text-align: left
