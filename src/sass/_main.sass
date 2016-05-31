@@ -4,17 +4,25 @@
   padding-top: 4.5%
   background: url(../img/sky.png) top left no-repeat
 .apartments
+  overflow: hidden
+  position: relative
   width: 100%
+  padding: 55px 0
   &__conteiner
-    width: 80%
-    max-width: 1140px
+    overflow: inherit
+    width: 1140px
     margin: auto
+    +r(1220)
+      width: 760px
+    +r(840)
+      width: 380px
   &__item
+    overflow: inherit
     width: 380px
     float: left
   &__titles
     display: block
-    width: 320px
+    width: 286px
     margin: auto
   &__uptitle
     padding: 0 0 5px 2px
@@ -32,13 +40,18 @@
     font-weight: bold
     text-align: left
   &__view
-    @extend .apartments__titles
+    width: 100%
   &__img
     position: relative
+    height: 245px
     &:hover
       cursor: pointer
       .apartments__closer
         display: block
+  &__big-img
+    display: block
+    margin: auto
+    max-height: 245px
   &__closer
     display: none
     position: absolute
@@ -56,44 +69,129 @@
     bottom: 2px
     border-radius: 100%
   &__form
+    overflow: hidden
     display: block
     width: 286px
-    margin: auto
-    padding: 20px
+    margin: 15px auto
+    padding: 22px
     background-color: #f0f0f0
     border-radius: 10px
   &__mail,
   &__password
-    width: 100%
     position: relative
+    width: 100%
+    margin-bottom: 7px
   &__input
     width: 100%
     height: 36px
-    margin-bottom: 5px
-    padding: 0 10px
+    padding: 0 35px
     border-radius: 6px
     border: 1px solid rgb(212, 212, 212)
     background-color: rgb(255, 255, 255)
     box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.004),inset 0px 1px 7px 0px rgba(0, 0, 1, 0.09)
+    font-size: 14px
+    line-height: 2
+    color: rgba(43, 43, 43, 0.302)
+    +Geneva
+    text-align: left
   &__label
     position: absolute
-    padding: 0 10px
-    width: 100%
-    left: 0
-    top: 0
-    line-height: 32px
+    left: 10px
+    top: 9px
   &__label-img
     float: left
   @each $s in email,password
     .icon_#{$s}
       display: inline-block
       +s(#{$s})
-  &__label-text
-    display: inline-block
-    overflow: hidden
-    width: auto
-    font-size: 13px
-    line-height: 2
-    color: rgba(43, 43, 43, 0.302)
-    +Geneva
+  &__help
+    width: 50%
+    float: left
     text-align: left
+    a
+      display: inline-block
+      width: 100%
+      font-size: 12px
+      +Geneva
+      color: rgba(43, 43, 43, 0.4)
+  &__button
+    float: right
+    height: 34px
+    width: 108px
+    border-radius: 6px
+    background: rgba(255,229,101,1)
+    background: linear-gradient(to bottom, rgba(255,229,101,1) 0%, rgba(254,195,86,1) 100%)
+    font-size: 14px
+    +prox-b
+    color: rgb(27, 26, 26)
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7)
+  &__contact
+    width: 286px
+    margin: auto
+    text-align: center
+  &__tel
+    +prox-b
+    font-size: 20px
+    color: rgb(43, 43, 43)
+    span
+      +prox-r
+      font-size: 13px
+  &__icon
+    height: 26px
+    width: 20px
+    display: inline-block
+    vertical-align: middle
+    i
+      display: inline-block
+      +s(location)
+  &__prompt
+    padding-left: 10px
+    font-size: 13px
+    +Geneva
+    color: rgb(43, 43, 43)
+  &__arrows
+    .slick-left,
+    .slick-right
+      @extend .slick-prev
+      margin-top: -20px
+      height: 40px
+      width: 40px
+      cursor: pointer
+      opacity: 0.5
+      background-color: transparent
+      &:before
+        width: 40px
+        height: 40px
+        content: " "
+        background-color: transparent
+        background-image: url(../img/left_arrow.png)
+      &:hover
+        opacity: 1
+    .slick-right
+      @extend .slick-next
+      &:before
+        content: " "
+        background-image: url(../img/right_arrow.png)
+.content
+  overflow: hidden
+  width: 100%
+  max-width: 1140px
+  margin: auto
+  padding: 1% 4%
+  &__text
+    width: 70%
+    float: left
+    font-size: 14px
+    +Geneva
+    color: rgb(43, 43, 43)
+    line-height: 1.5
+    text-align: left
+    ul
+      padding-left: 4%
+      li
+        list-style-type: none
+      li:before
+        content: "\2013"
+  &__sidebar
+    width: 30%
+    float: right

@@ -8,6 +8,7 @@
 	<meta name="theme-color" content="#fff">
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" media="all" href="css/style.css" >
+	<script src="js/jquery-1.12.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
@@ -18,6 +19,43 @@
 	</div>
 	<div class="apartments">
 		<div class="apartments__conteiner">
+			<div class="apartments__item">
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Одинцовский <br>парк</h1>
+				</div>
+				<div class="apartments__view">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/odintsov.png" alt="Одинцовский парк"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
+					</div>
+				</div>
+					<form class="apartments__form" action="index.html" method="post">
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-odin" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-odin" id="label_email-odin" >
+								<i class="apartments__label-img icon_email"></i>
+							</label>
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-odin" placeholder="Логин"/>
+							<label class="apartments__label" for="password-odin">
+								<i class="apartments__label-img icon_password"></i>
+							</label>
+						</div>
+						<div class="apartments__help">
+							<a class="apartments__helper" href="">Забыли пароль?</a>
+							<a class="apartments__sign" href="">Регистрация</a>
+						</div>
+						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
+					</form>
+					<div class="apartments__contact">
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
+					</div>
+			</div>
 			<div class="apartments__item">
 				<div class="apartments__titles">
 					<h3 class="apartments__uptitle">Жилой комплекс</h3>
@@ -32,20 +70,18 @@
 					</div>
 				</div>
 					<form class="apartments__form" action="index.html" method="post">
-						<span class="apartments__mail">
-							<input class="apartments__input" type="email" id="email" onchange="document.getElementById('label_email').style.display = this.checked ? 'block' : 'none'"/>
-							<label class="apartments__label" for="email" id="label_email" >
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-vatut" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-vatut" id="label_email-vatut" >
 								<i class="apartments__label-img icon_email"></i>
-								<span class="apartments__label-text">Электронная&nbsp;почта</span>
 							</label>
-						</span>
-						<span class="apartments__password">
-							<input class="apartments__input" type="password" id="password"/>
-							<label class="apartments__label" for="password">
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-vatut" placeholder="Логин"/>
+							<label class="apartments__label" for="password-vatut">
 								<i class="apartments__label-img icon_password"></i>
-								<span class="apartments__label-text">Логин</span>
 							</label>
-						</span>
+						</div>
 						<div class="apartments__help">
 							<a class="apartments__helper" href="">Забыли пароль?</a>
 							<a class="apartments__sign" href="">Регистрация</a>
@@ -53,8 +89,157 @@
 						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
 					</form>
 					<div class="apartments__contact">
-						<h4 class="apartments__tel"><span></span></h4>
-						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#"></a>
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
+					</div>
+			</div>
+			<div class="apartments__item">
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Новое<br>Бутово</h1>
+				</div>
+				<div class="apartments__view">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/butovo.png" alt="Новое Бутово"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
+					</div>
+				</div>
+					<form class="apartments__form" action="index.html" method="post">
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-butovo" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-butovo" id="label_email-butovo" >
+								<i class="apartments__label-img icon_email"></i>
+							</label>
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-butovo" placeholder="Логин"/>
+							<label class="apartments__label" for="password-butovo">
+								<i class="apartments__label-img icon_password"></i>
+							</label>
+						</div>
+						<div class="apartments__help">
+							<a class="apartments__helper" href="">Забыли пароль?</a>
+							<a class="apartments__sign" href="">Регистрация</a>
+						</div>
+						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
+					</form>
+					<div class="apartments__contact">
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
+					</div>
+			</div>
+			<!-- replay -->
+			<div class="apartments__item">
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Одинцовский <br>парк</h1>
+				</div>
+				<div class="apartments__view">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/odintsov.png" alt="Одинцовский парк"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
+					</div>
+				</div>
+					<form class="apartments__form" action="index.html" method="post">
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-odin2" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-odin2" id="label_email-odin2" >
+								<i class="apartments__label-img icon_email"></i>
+							</label>
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-odin2" placeholder="Логин"/>
+							<label class="apartments__label" for="password-odin2">
+								<i class="apartments__label-img icon_password"></i>
+							</label>
+						</div>
+						<div class="apartments__help">
+							<a class="apartments__helper" href="">Забыли пароль?</a>
+							<a class="apartments__sign" href="">Регистрация</a>
+						</div>
+						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
+					</form>
+					<div class="apartments__contact">
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
+					</div>
+			</div>
+			<div class="apartments__item">
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Новые<br>Ватутинки</h1>
+				</div>
+				<div class="apartments__view">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/vatut.png" alt="Новые Ватутинки"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
+					</div>
+				</div>
+					<form class="apartments__form" action="index.html" method="post">
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-vatut2" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-vatut2" id="label_email-vatut2" >
+								<i class="apartments__label-img icon_email"></i>
+							</label>
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-vatut2" placeholder="Логин"/>
+							<label class="apartments__label" for="password-vatut2">
+								<i class="apartments__label-img icon_password"></i>
+							</label>
+						</div>
+						<div class="apartments__help">
+							<a class="apartments__helper" href="">Забыли пароль?</a>
+							<a class="apartments__sign" href="">Регистрация</a>
+						</div>
+						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
+					</form>
+					<div class="apartments__contact">
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
+					</div>
+			</div>
+			<div class="apartments__item">
+				<div class="apartments__titles">
+					<h3 class="apartments__uptitle">Жилой комплекс</h3>
+					<h1 class="apartments__title">Новое<br>Бутово</h1>
+				</div>
+				<div class="apartments__view">
+					<div class="apartments__img">
+						<a href="#"><img class="apartments__big-img" src="img/butovo.png" alt="Новое Бутово"></a>
+						<div class="apartments__closer">
+						<a href="#"><img class="apartments__little-img" src="img/vatut__little.png"></a>
+						</div>
+					</div>
+				</div>
+					<form class="apartments__form" action="index.html" method="post">
+						<div class="apartments__mail">
+							<input class="apartments__input" type="email" id="email-butovo2" placeholder="Электронная почта"/>
+							<label class="apartments__label" for="email-butovo2" id="label_email-butovo2" >
+								<i class="apartments__label-img icon_email"></i>
+							</label>
+						</div>
+						<div class="apartments__password">
+							<input class="apartments__input" type="password" id="password-butovo2" placeholder="Логин"/>
+							<label class="apartments__label" for="password-butovo2">
+								<i class="apartments__label-img icon_password"></i>
+							</label>
+						</div>
+						<div class="apartments__help">
+							<a class="apartments__helper" href="">Забыли пароль?</a>
+							<a class="apartments__sign" href="">Регистрация</a>
+						</div>
+						<button class="apartments__button" type="submit" name="button" onclick="" >Войти</button>
+					</form>
+					<div class="apartments__contact">
+						<h4 class="apartments__tel"><span>Продажи</span> +7 495 995-15-25 </h4>
+						<div class="apartments__icon"><i></i></div><a class="apartments__prompt" href="#">Как добраться до объекта?</a>
 					</div>
 			</div>
 		</div>
@@ -63,6 +248,44 @@
 			<div class="slick-right"></div>
 		</div>
 	</div>
+	<div class="content">
+		<section class="content__text">
+			<p>«Живем вместе» – особенный проект, созданный  специально для  наших покупателей, которые приобрели квартиру в  «БЕСТ-Новострой». Приобретая квартиру в «БЕСТ-Новострой»,  Вы можете стать членом  нашего  клуба «Живем вместе» и иметь доступ к актуальной  информации о вашем комплексе. Получив  Клубную Карту программы, Вы сможете пользоваться  специальным пакетом привилегированных услуг:</p><br>
+			<ul>
+				<li>
+					Партнёрская Программа (Вы получите скидки на товары и услуги по Клубной Карте);
+				</li>
+				<li>
+					Полезная Информация о вашем комплексе и ближайших обслуживающих организаций;
+				</li>
+				<li>
+					Удобный доступ к документам, планировкам и шахматке;
+				</li>
+				<li>
+					регулярное освещение хода строительства;
+				</li>
+				<li>
+					лента новостей по жилому комплексу;
+				</li>
+				<li>
+					онлайн-заявки для различных целей (напр: машиноместа, типовая отделка и т.д.);
+				</li>
+				<li>
+					площадка для общения между жильцами комплекса (форум).
+				</li>
+			</ul><br>
+			<p>И это далеко не всё, что вы можете узнать на сайте: <a href="vmeste-bn.ru">vmeste-bn.ru</a></p>
+			<p>Нам  важно, чтобы Вы жили с комфортом и стали хорошими соседями друг для друга.</p>
+			<p>ВМЕСТЕ мы  создаем жилую среду — комплекс, который в будущем будет приносить вам радость и уют. Начиная с покупки квартиры и даже после заселения, мы будем рядом, чтобы помогать благоустраивать ваш жилой комплекс.</p><br>
+			<p>Участвуйте в проекте «Живем вместе», это поможет сделать жизнь вашего дома яркой, насыщенной, и конечно, удобной! Делитесь своими мыслями и предложениями, а мы – «БЕСТ-Новострой»— окажем всевозможное содействие в создании жилья Вашей мечты!</p>
+		</section>
+		<section class="content__sidebar">
+
+		</section>
+	</div>
+	<article class="news">
+
+	</article>
 	//=include partials/footer.html
 </div>
 <!-- END out-->
