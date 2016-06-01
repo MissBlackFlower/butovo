@@ -1,15 +1,15 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20110222 at Fri Jun  6 11:46:04 2014
- By deploy user
+Created by FontForge 20150824 at Wed Jun  1 04:33:34 2016
+ By Everything Fonts
 Copyright (c) Mark Simonson, 2005. All rights reserved.
 </metadata>
 <defs>
-<font id="ProximaNova-Regular" horiz-adv-x="572" >
+<font id="ProximaNovaRegular" horiz-adv-x="572" >
   <font-face 
-    font-family="Proxima Nova Rg"
+    font-family="ProximaNovaRegular"
     font-weight="400"
     font-stretch="normal"
     units-per-em="1000"
@@ -20,7 +20,7 @@ Copyright (c) Mark Simonson, 2005. All rights reserved.
     cap-height="667"
     bbox="-172 -272 1082 907"
     underline-thickness="20"
-    underline-position="-113"
+    underline-position="-153"
     unicode-range="U+000D-FB04"
   />
 <missing-glyph horiz-adv-x="507" 
@@ -2543,6 +2543,87 @@ d="M588 0h-82l-125 431l-124 -431h-82l-165 550h87l123 -443l129 443h66l128 -444l12
 d="M314 0h-78v233l-229 317h91l177 -250l174 250h91l-226 -317v-233zM332 606h-57l-169 144h78z" />
     <glyph glyph-name="afii10065.alt1" horiz-adv-x="575" 
 d="M500 0h-75v72q-62 -84 -163 -84q-96 0 -155.5 68.5t-59.5 184.5q0 115 59.5 184.5t155.5 69.5q101 0 162 -85v73h76v-483zM280 55q44 0 84 22t61 54v219q-21 33 -61.5 55.5t-83.5 22.5q-71 0 -113 -52.5t-42 -134.5t42 -134t113 -52z" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="dagger"
+	k="97" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="V.smcp"
+	k="20" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="Cacute.smcp,Ccaron.smcp,Ccircumflex.smcp,Cdotaccent.smcp,Gbreve.smcp,Gcircumflex.smcp,Gcommaaccent.smcp,Gdotaccent.smcp,Obreve.smcp,Ohungarumlaut.smcp,Omacron.smcp,Oslashacute.smcp,OE.smcp,C.smcp,G.smcp,O.smcp,Q.smcp,Ccedilla.smcp,Ograve.smcp,Oacute.smcp,Ocircumflex.smcp,Otilde.smcp,Odieresis.smcp,Oslash.smcp,G.smcp.alt1,Gbreve.smcp.alt1,Gcommaaccent.smcp.alt1,Gcircumflex.smcp.alt1,Gdotaccent.smcp.alt1"
+	k="17" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="daggerdbl"
+	k="37" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="question"
+	k="77" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="quotedbl,quotesingle,registered,uni02BC,quoteleft,quoteright,quotedblleft,quotedblright,trademark"
+	k="97" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="tau,afii10084,afii10092,Tbar.smcp,Tcaron.smcp,Tcommaaccent.smcp,T.smcp,uni021A.smcp,uni1E6A.smcp"
+	k="37" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="Wcircumflex.smcp,W.smcp,Wacute.smcp,Wdieresis.smcp,Wgrave.smcp"
+	k="20" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="C,G,O,Q,Ccedilla,Ograve,Oacute,Ocircumflex,Otilde,Odieresis,Oslash,Cacute,Ccircumflex,Cdotaccent,Ccaron,Gcircumflex,Gbreve,Gdotaccent,Gcommaaccent,Omacron,Obreve,Ohungarumlaut,OE,Oslashacute,Theta,Omicron,Phi,theta,afii10053,afii10032,afii10035,afii10038,G.alt1,Gbreve.alt1,Gcommaaccent.alt1,Gcircumflex.alt1,Gdotaccent.alt1"
+	k="37" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="J,Jcircumflex,afii10057"
+	k="-9" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="asterisk"
+	k="101" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="S,Sacute,Scircumflex,Scedilla,Scaron,Scommaaccent,afii10054,afii10025,uni1E60"
+	k="14" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="U,Ugrave,Uacute,Ucircumflex,Udieresis,Umacron,Ubreve,Uring,Uhungarumlaut,Uogonek,Uhorn,Psi,uni1EE4,uni1EE6,uni1EE8,uni1EEA,uni1EEC,uni1EEE,uni1EF0"
+	k="26" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="T,Tcommaaccent,Tcaron,Tbar,uni021A,Tau,afii10051,afii10060,afii10036,afii10041,afii10044,uni1E6A"
+	k="67" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="W,Wcircumflex,Wgrave,Wacute,Wdieresis"
+	k="47" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="V"
+	k="54" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="Y,Yacute,Ycircumflex,Ydieresis,Upsilontonos,Upsilon,Upsilondieresis,Ygrave"
+	k="63" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="psi,Ubreve.smcp,Uhungarumlaut.smcp,Umacron.smcp,Uogonek.smcp,Uring.smcp,U.smcp,Ugrave.smcp,Uacute.smcp,Ucircumflex.smcp,Udieresis.smcp,uni1EE4.smcp,Uhorn.smcp,uni1EE6.smcp,uni1EE8.smcp,uni1EEA.smcp,uni1EEC.smcp,uni1EEE.smcp,uni1EF0.smcp"
+	k="10" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="f,longs,uni1E1F,f_f_j,f_j,f_f,fi,fl,f_f_i,f_f_l,f.alt1,f_h,f_k,fl.alt1,f_f_l.alt1"
+	k="9" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="Ycircumflex.smcp,Y.smcp,Yacute.smcp,Ydieresis.smcp,Ygrave.smcp"
+	k="50" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="u,mu,ugrave,uacute,ucircumflex,udieresis,umacron,ubreve,uring,uhungarumlaut,uogonek,uhorn,uni03BC,upsilon,upsilontonos,uni1EE5,uni1EE7,uni1EE9,uni1EEB,uni1EED,uni1EEF,uni1EF1,y.alt1,yacute.alt1,ycircumflex.alt1,ydieresis.alt1,ygrave.alt1"
+	k="12" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="t,tcommaaccent,tcaron,tbar,uni021B,uni1E6B"
+	k="11" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="w,wcircumflex,afii10089,wgrave,wacute,wdieresis"
+	k="17" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="v,gamma,nu"
+	k="20" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="y,yacute,ydieresis,ycircumflex,chi,afii10085,afii10110"
+	k="20" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="bullet.case"
+	k="37" />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring,Amacron,Abreve,Aogonek,Alphatonos,Alpha,uni0394,Lambda,afii10051,afii10058,afii10059,afii10060,afii10017,afii10044,afii10046,uni1EA0,uni1EA2,uni1EA4,uni1EA6,uni1EA8,uni1EAA,uni1EAC,uni1EAE,uni1EB0,uni1EB2,uni1EB4,uni1EB6,Delta"
+	g2="hyphen.case,endash.case,emdash.case,periodcentered.case"
+	k="47" />
     <hkern g1="lambda,afii10092,afii10094,afii10106,afii10107,Abreve.smcp,Amacron.smcp,Aogonek.smcp,A.smcp,Agrave.smcp,Aacute.smcp,Acircumflex.smcp,Atilde.smcp,Adieresis.smcp,Aring.smcp,uni1EA0.smcp,uni1EA2.smcp,uni1EA4.smcp,uni1EAC.smcp,uni1EA6.smcp,uni1EA8.smcp,uni1EAE.smcp,uni1EAA.smcp,uni1EB0.smcp,uni1EB2.smcp,uni1EB4.smcp,uni1EB6.smcp"
 	g2="dagger"
 	k="77" />
