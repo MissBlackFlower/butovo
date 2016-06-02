@@ -138,6 +138,10 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .content__text ul li { list-style-type: none; }
 .content__text ul li:before { content: "–"; }
 .content__sidebar { width: 30%; float: right; }
+.content__technical p { float: right; width: 80%; }
+.content__question { float: left; width: 20%; padding-top: 6%; }
+.content__question img { float: right; }
+.content__number { float: left; width: 80%; }
 .content__club-card { padding: 1% 12%; text-align: left; color: #2b2b2b; }
 .content__club-card h3 { font-family: "ProximaNovaBold"; font-size: 23px; }
 .content__club-card p { font-family: "Geneva"; font-size: 13px; }
