@@ -177,10 +177,11 @@
   width: 100%
   max-width: 1140px
   margin: auto
-  padding: 1% 4%
+  padding: 1% 2%
   &__text
     width: 70%
     float: left
+    padding: 0 5%
     font-size: 13px
     +Geneva
     color: rgb(43, 43, 43)
@@ -192,30 +193,132 @@
         list-style-type: none
       li:before
         content: "\2013"
+    a
+      color: #2f96cb
   &__sidebar
     width: 30%
     float: right
   &__technical
+    overflow: hidden
     p
       float: right
       width: 80%
+      padding-left: 7px
+      padding-top: 2px
+      font-size: 12px
+      font-family: "Arial"
+      color: rgb(1, 1, 1)
+      line-height: 1
+    h4
+      +prox-s
+      font-size: 20px
+      color: rgb(53, 53, 53)
+      line-height: 0.789
+      text-align: left
+    span
+      font-size: 12.5px
+      color: rgb(145, 145, 145)
+      line-height: 1.25
   &__question
     float: left
     width: 20%
-    padding-top: 6%
+    padding-top: 4%
     img
       float: right
   &__number
     float: left
     width: 80%
   &__img
+    padding: 6% 0 5% 0
+    img
+      margin: auto
   &__club-card
-    padding: 1% 12%
+    padding: 1% 12% 0 16%
     text-align: left
     color: rgb(43, 43, 43)
     h3
       +prox-b
-      font-size: 23px
+      font-size: 22px
     p
+      padding: 5% 0
       +Geneva
       font-size: 13px
+    a
+      +Geneva
+      font-size: 12px
+      color: rgba(43, 43, 43, 0.4)
+      line-height: 2.167
+      text-align: left
+.news
+  overflow: hidden
+  width: 100%
+  max-width: 1120px
+  margin: auto
+  padding: 1% 4%
+  background-color: #f6f6f6
+  border-radius: 10px
+  &__title
+    float: left
+    padding-left: 2%
+    +prox-s
+    font-size: 20px
+    color: rgb(43, 43, 43)
+  &__all
+    float: right
+    padding-right: 2%
+    +Geneva
+    font-size: 12px
+    color: rgb(43, 43, 43)
+    line-height: 2
+  &__conteiner
+    overflow: hidden
+    width: 100%
+    padding: 2% 0
+  &__item
+    width: (100%/3)
+    float: left
+    padding: 0 2%
+    text-align: left
+  &__date
+    +Geneva
+    font-size: 12px
+    font-style: italic
+    color: #1a9dd7
+    line-height: 1.667
+  &__text
+    color: rgb(43, 43, 43)
+    +Geneva
+    font-size: 12px
+    line-height: 1.667
+  &__link
+    +Geneva
+    font-size: 12px
+    color: rgba(43, 43, 43, 0.4)
+    line-height: 2.167
+.partners
+  overflow: hidden
+  width: 100%
+  max-width: 1120px
+  margin: auto
+  padding: 1% 4%
+  &__title
+    padding-left: 2%
+    +prox-s
+    font-size: 20px
+    color: rgb(43, 43, 43)
+  &__conteiner
+    overflow: hidden
+    width: 100%
+    padding: 0 4% 
+  &__link
+    float: left
+    width: 10%
+    font-size: 11px
+    color: rgb(43, 43, 43)
+    line-height: 1.2
+    text-align: left
+    +Geneva
+  @for $i from 1 through 29
+    .partners__icon#{$i}
+      display: block
+      +s(partners_#{$i})
