@@ -103,13 +103,42 @@ body
 // footer
 .footer
 	width: 100%
-	padding: 2% 0
 	position: relative
 	&__line
+		position: absolute
+		width: 100%
+		top: 10%
+		margin: 0
+		border: none
+		height: 1px
+		background-color: #dadada
+		z-index: -1
 	&__in
-	&__title
+		overflow: hidden
+		width: 100%
+		max-width: 1120px
+		margin: auto
+		padding: 0 3.5% 0 0
+	&__copy
+		float: left
+		clear: both
+		padding: 0 4%
+		+prox-s
+		font-size: 14px
+		color: rgb(43, 43, 43)
+		text-align: left
+		background-color: #fff
 	&__text
+		float: left
+		clear: both
+		padding: 0 6%
+		font-size: 11px
+		+Geneva
+		color: rgb(125, 125, 125)
+		line-height: 2.6
 	&__link
+		color: #2896df
 	&__img
+		float: right
 
 // end footer

@@ -96,11 +96,17 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .header__link:hover .header__name { border-bottom: dotted 1px #b9babb; }
 .header__name { border-bottom: solid 1px #b9babb; }
 
-.footer { width: 100%; padding: 2% 0; position: relative; }
+.footer { width: 100%; position: relative; }
+.footer__line { position: absolute; width: 100%; top: 10%; margin: 0; border: none; height: 1px; background-color: #dadada; z-index: -1; }
+.footer__in { overflow: hidden; width: 100%; max-width: 1120px; margin: auto; padding: 0 3.5% 0 0; }
+.footer__copy { float: left; clear: both; padding: 0 4%; font-family: "ProximaNovaSemibold"; font-size: 14px; color: #2b2b2b; text-align: left; background-color: #fff; }
+.footer__text { float: left; clear: both; padding: 0 6%; font-size: 11px; font-family: "Geneva"; color: #7d7d7d; line-height: 2.6; }
+.footer__link { color: #2896df; }
+.footer__img { float: right; }
 
 .bg_sky { overflow: hidden; padding-top: 4.5%; background: url(../img/sky.png) top left no-repeat; }
 
-.apartments { overflow: hidden; position: relative; width: 100%; padding: 55px 0; }
+.apartments { overflow: hidden; position: relative; width: 100%; padding: 55px 0 45px 0; }
 .apartments__conteiner { overflow: inherit; width: 1140px; margin: auto; }
 .apartments__item { overflow: inherit; width: 380px; float: left; }
 .apartments__titles { display: block; width: 286px; margin: auto; }
@@ -124,7 +130,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .apartments__help a { display: inline-block; width: 100%; font-size: 11px; font-family: "Geneva"; color: rgba(43, 43, 43, 0.4); }
 .apartments__button { float: right; height: 34px; width: 108px; -webkit-border-radius: 6px; border-radius: 6px; background: #ffe565; background: -webkit-gradient(linear, left top, left bottom, from(#ffe565), to(#fec356)); background: -webkit-linear-gradient(top, #ffe565 0%, #fec356 100%); background: linear-gradient(to bottom, #ffe565 0%, #fec356 100%); font-size: 15px; font-family: "ProximaNovaBold"; color: #1b1a1a; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7); }
 .apartments__contact { width: 286px; margin: auto; text-align: center; }
-.apartments__tel { font-family: "ProximaNovaBold"; font-size: 21px; color: #2b2b2b; }
+.apartments__tel { font-family: "ProximaNovaBold"; font-size: 21px; color: #2b2b2b; margin-bottom: 5px; }
 .apartments__tel span { font-family: "ProximaNovaRegular"; font-size: 13px; }
 .apartments__icon { height: 26px; width: 20px; display: inline-block; vertical-align: middle; }
 .apartments__icon i { display: inline-block; background-image: url("../img/icons.png"); width: 20px; height: 26px; background-position: -255px -376px; }
@@ -134,38 +140,38 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .apartments__arrows .slick-left:hover, .apartments__arrows .slick-right:hover { opacity: 1; }
 .apartments__arrows .slick-right:before { content: " "; background-image: url(../img/right_arrow.png); }
 
-.content { overflow: hidden; width: 100%; max-width: 1140px; margin: auto; padding: 1% 2%; }
-.content__text { width: 70%; float: left; padding: 0 5%; font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.5; text-align: left; }
+.content { overflow: hidden; width: 100%; max-width: 1140px; margin: auto; padding: 0 2% 3.5% 2%; }
+.content__text { width: 65%; float: left; padding: 0 3%; font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.5; text-align: left; }
 .content__text ul { padding-left: 4%; }
 .content__text ul li { list-style-type: none; }
 .content__text ul li:before { content: "–"; }
 .content__text a { color: #2f96cb; }
-.content__sidebar { width: 30%; float: right; }
-.content__technical { overflow: hidden; }
-.content__technical p { float: right; width: 80%; padding-left: 7px; padding-top: 2px; font-size: 12px; font-family: "Arial"; color: #010101; line-height: 1; }
+.content__sidebar { width: 35%; float: right; }
+.content__technical { overflow: hidden; width: 100%; }
+.content__technical p { float: right; width: 70%; padding-left: 7px; padding-top: 2px; font-size: 12px; font-family: "Arial"; color: #010101; line-height: 1; }
 .content__technical h4 { font-family: "ProximaNovaSemibold"; font-size: 20px; color: #353535; line-height: 0.789; text-align: left; }
 .content__technical span { font-size: 12.5px; color: #919191; line-height: 1.25; }
-.content__question { float: left; width: 20%; padding-top: 4%; }
-.content__question img { float: right; }
-.content__number { float: left; width: 80%; }
-.content__img { padding: 6% 0 5% 0; }
-.content__img img { margin: auto; }
-.content__club-card { padding: 1% 12% 0 16%; text-align: left; color: #2b2b2b; }
+.content__question { float: left; width: 30%; padding-top: 4%; }
+.content__question img { float: right; width: 100%; max-width: 50px; }
+.content__number { float: left; width: 70%; }
+.content__img { width: 100%; max-width: 300px; padding: 6% 0; margin: auto; }
+.content__img img { width: 100%; }
+.content__club-card { max-width: 220px; padding: 1% 0; margin: auto; text-align: left; color: #2b2b2b; }
 .content__club-card h3 { font-family: "ProximaNovaBold"; font-size: 22px; }
 .content__club-card p { padding: 5% 0; font-family: "Geneva"; font-size: 13px; }
 .content__club-card a { font-family: "Geneva"; font-size: 12px; color: rgba(43, 43, 43, 0.4); line-height: 2.167; text-align: left; }
 
-.news { overflow: hidden; width: 100%; max-width: 1120px; margin: auto; padding: 1% 4%; background-color: #f6f6f6; -webkit-border-radius: 10px; border-radius: 10px; }
-.news__title { float: left; padding-left: 2%; font-family: "ProximaNovaSemibold"; font-size: 20px; color: #2b2b2b; }
-.news__all { float: right; padding-right: 2%; font-family: "Geneva"; font-size: 12px; color: #2b2b2b; line-height: 2; }
+.news { overflow: hidden; width: 100%; max-width: 1120px; margin: auto; padding: 1% 1.5% 1% 3.5%; background-color: #f6f6f6; -webkit-border-radius: 15px; border-radius: 15px; }
+.news__title { float: left; font-family: "ProximaNovaSemibold"; font-size: 20px; color: #2b2b2b; }
+.news__all { float: right; padding-right: 2%; font-family: "Geneva"; font-size: 13px; color: #2b2b2b; line-height: 2; }
 .news__conteiner { overflow: hidden; width: 100%; padding: 2% 0; }
-.news__item { width: 33.33333%; float: left; padding: 0 2%; text-align: left; }
+.news__item { width: 33.33333%; float: left; padding-right: 2%; text-align: left; }
 .news__date { font-family: "Geneva"; font-size: 12px; font-style: italic; color: #1a9dd7; line-height: 1.667; }
 .news__text { color: #2b2b2b; font-family: "Geneva"; font-size: 12px; line-height: 1.667; }
 .news__link { font-family: "Geneva"; font-size: 12px; color: rgba(43, 43, 43, 0.4); line-height: 2.167; }
 
-.partners { overflow: hidden; width: 100%; max-width: 1120px; margin: auto; padding: 1% 4%; }
-.partners__title { padding-left: 2%; font-family: "ProximaNovaSemibold"; font-size: 20px; color: #2b2b2b; }
+.partners { overflow: hidden; width: 100%; max-width: 1120px; margin: auto; padding: 2% 3.5% 5% 3.5%; }
+.partners__title { font-family: "ProximaNovaSemibold"; font-size: 20px; color: #2b2b2b; }
 .partners__conteiner { overflow: hidden; width: 100%; }
 .partners__link { float: left; width: 10%; font-size: 11px; color: #2b2b2b; line-height: 1.2; text-align: left; font-family: "Geneva"; }
 .partners .partners__icon1 { display: block; background-image: url("../img/icons.png"); width: 89px; height: 90px; background-position: -192px 0px; }
