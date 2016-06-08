@@ -328,3 +328,37 @@
     .partners__icon#{$i}
       display: block
       +s(partners_#{$i})
+.butovo
+  overflow: hidden
+  width: 100%
+  max-width: 1000px
+  margin: 7% auto
+  position: relative
+  &__logo
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+  &__titles
+    position: absolute
+    top: 10px
+    right: 0
+    width: 40%
+  &__uptitle
+    @extend .apartments__uptitle
+  &__title
+    @extend .apartments__title
+  &__img
+    width: 100%
+    max-width: 830px
+    margin: auto
+  &__text
+    width: 100%
+    max-width: 640px
+    margin: 4% auto
+    p
+      font-size: 13px
+      +Geneva
+      color: rgb(43, 43, 43)
+      line-height: 2
+      text-align: left

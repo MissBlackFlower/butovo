@@ -60,7 +60,14 @@ body
 	margin: 0 auto
 	max-width: 1500px
 	+clr
-
+.up-img
+	overflow: hidden
+	width: 100%
+	max-width: 1230px
+	margin: auto
+	padding-bottom: 1.7%
+	img
+		float: left
 // header
 .header
 	overflow: hidden
@@ -84,7 +91,7 @@ body
 	&__icon
 		display: inline-block
 		vertical-align: middle
-	@each $s in key,graf,chat,diagram,letter,news,case,query,roller,card
+	@each $s in key,graf,chat,diagram,letter,news,case,query,roller,card,info,speak,smile,build
 		.icon_#{$s}
 			+s(#{$s})
 	&__link
@@ -100,6 +107,45 @@ body
 	&__name
 		border-bottom: solid 1px #b9babb
 // end header
+.main-header
+	@extend .header
+	max-width: 1065px
+	&__account
+		width: 30%
+		max-width: 245px
+		float: right
+		padding: 1.2%
+		border-radius: 6px
+		background-color: rgb(243, 243, 243)
+	&__info
+		float: left
+		width: 70%
+	&__icon
+		float: left
+		+s(private)
+		margin-right: 8px
+	&__login
+		float: left
+		width: 100%
+		+prox-b
+		font-size: 13px
+		line-height: 24px
+		color: #46484c
+	&__personal
+		float: left
+		width: 100%
+		padding-left: 29px
+		+prox-s
+		font-size: 12px
+		color: $gray_dark
+	&__exit
+		float: right
+		width: 30%
+		text-align: right
+		line-height: 21px
+		+prox-s
+		font-size: 13px
+		color: $gray_dark
 // footer
 .footer
 	width: 100%
