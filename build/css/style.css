@@ -87,7 +87,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .header__icon { display: inline-block; vertical-align: middle; }
 .header .icon_key, .main-header .icon_key { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: -323px -406px; }
 .header .icon_graf, .main-header .icon_graf { background-image: url("../img/icons.png"); width: 20px; height: 15px; background-position: -299px -406px; }
-.header .icon_chat, .main-header .icon_chat { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -328px -376px; }
+.header .icon_chat, .main-header .icon_chat { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -376px -376px; }
 .header .icon_diagram, .main-header .icon_diagram { background-image: url("../img/icons.png"); width: 20px; height: 16px; background-position: -472px -376px; }
 .header .icon_letter, .main-header .icon_letter { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -371px -406px; }
 .header .icon_news, .main-header .icon_news { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -347px -406px; }
@@ -95,7 +95,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .header .icon_query, .main-header .icon_query { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: -448px -376px; }
 .header .icon_roller, .main-header .icon_roller { background-image: url("../img/icons.png"); width: 20px; height: 20px; background-position: -304px -376px; }
 .header .icon_card, .main-header .icon_card { background-image: url("../img/icons.png"); width: 20px; height: 14px; background-position: -395px -406px; }
-.header .icon_info, .main-header .icon_info { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -376px -376px; }
+.header .icon_info, .main-header .icon_info { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -328px -376px; }
 .header .icon_speak, .main-header .icon_speak { background-image: url("../img/icons.png"); width: 20px; height: 17px; background-position: -400px -376px; }
 .header .icon_smile, .main-header .icon_smile { background-image: url("../img/icons.png"); width: 20px; height: 16px; background-position: -496px -376px; }
 .header .icon_build, .main-header .icon_build { background-image: url("../img/icons.png"); width: 20px; height: 18px; background-position: -352px -376px; }
@@ -139,8 +139,8 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .apartments__input { width: 100%; height: 36px; padding: 0 35px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #d4d4d4; background-color: white; -webkit-box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.004), inset 0px 1px 7px 0px rgba(0, 0, 1, 0.09); box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.004), inset 0px 1px 7px 0px rgba(0, 0, 1, 0.09); font-size: 13px; line-height: 2; color: rgba(43, 43, 43, 0.302); font-family: "Geneva"; text-align: left; }
 .apartments__label { position: absolute; left: 10px; top: 9px; }
 .apartments__label-img { float: left; }
-.apartments .icon_email { display: inline-block; background-image: url("../img/icons.png"); width: 18px; height: 18px; background-position: -277px -406px; }
-.apartments .icon_password { display: inline-block; background-image: url("../img/icons.png"); width: 18px; height: 18px; background-position: -255px -406px; }
+.apartments .icon_email { display: inline-block; background-image: url("../img/icons.png"); width: 18px; height: 18px; background-position: -255px -406px; }
+.apartments .icon_password { display: inline-block; background-image: url("../img/icons.png"); width: 18px; height: 18px; background-position: -277px -406px; }
 .apartments__help { width: 50%; float: left; text-align: left; }
 .apartments__help a { display: inline-block; width: 100%; font-size: 11px; font-family: "Geneva"; color: rgba(43, 43, 43, 0.4); }
 .apartments__button { float: right; height: 34px; width: 108px; -webkit-border-radius: 6px; border-radius: 6px; background: #ffe565; background: -webkit-gradient(linear, left top, left bottom, from(#ffe565), to(#fec356)); background: -webkit-linear-gradient(top, #ffe565 0%, #fec356 100%); background: linear-gradient(to bottom, #ffe565 0%, #fec356 100%); font-size: 15px; font-family: "ProximaNovaBold"; color: #1b1a1a; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7); }
@@ -194,7 +194,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .partners .partners__icon3 { display: block; background-image: url("../img/icons.png"); width: 90px; height: 90px; background-position: -98px 0px; }
 .partners .partners__icon4 { display: block; background-image: url("../img/icons.png"); width: 66px; height: 90px; background-position: -450px -94px; }
 .partners .partners__icon5 { display: block; background-image: url("../img/icons.png"); width: 90px; height: 90px; background-position: -94px -94px; }
-.partners .partners__icon6 { display: block; background-image: url("../img/icons.png"); width: 67px; height: 90px; background-position: -379px -282px; }
+.partners .partners__icon6 { display: block; background-image: url("../img/icons.png"); width: 67px; height: 90px; background-position: -450px 0px; }
 .partners .partners__icon7 { display: block; background-image: url("../img/icons.png"); width: 75px; height: 90px; background-position: -370px -94px; }
 .partners .partners__icon8 { display: block; background-image: url("../img/icons.png"); width: 90px; height: 90px; background-position: 0px -94px; }
 .partners .partners__icon9 { display: block; background-image: url("../img/icons.png"); width: 76px; height: 90px; background-position: -285px -188px; }
@@ -202,21 +202,21 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .partners .partners__icon11 { display: block; background-image: url("../img/icons.png"); width: 86px; height: 90px; background-position: 0px -188px; }
 .partners .partners__icon12 { display: block; background-image: url("../img/icons.png"); width: 76px; height: 90px; background-position: -370px 0px; }
 .partners .partners__icon13 { display: block; background-image: url("../img/icons.png"); width: 71px; height: 90px; background-position: -232px -282px; }
-.partners .partners__icon14 { display: block; background-image: url("../img/icons.png"); width: 73px; height: 90px; background-position: -155px -282px; }
+.partners .partners__icon14 { display: block; background-image: url("../img/icons.png"); width: 73px; height: 90px; background-position: -78px -282px; }
 .partners .partners__icon15 { display: block; background-image: url("../img/icons.png"); width: 87px; height: 90px; background-position: -192px -94px; }
-.partners .partners__icon16 { display: block; background-image: url("../img/icons.png"); width: 81px; height: 90px; background-position: -179px -188px; }
-.partners .partners__icon17 { display: block; background-image: url("../img/icons.png"); width: 81px; height: 90px; background-position: -285px 0px; }
-.partners .partners__icon18 { display: block; background-image: url("../img/icons.png"); width: 61px; height: 90px; background-position: 0px -376px; }
-.partners .partners__icon19 { display: block; background-image: url("../img/icons.png"); width: 73px; height: 90px; background-position: -78px -282px; }
+.partners .partners__icon16 { display: block; background-image: url("../img/icons.png"); width: 81px; height: 90px; background-position: -285px 0px; }
+.partners .partners__icon17 { display: block; background-image: url("../img/icons.png"); width: 81px; height: 90px; background-position: -179px -188px; }
+.partners .partners__icon18 { display: block; background-image: url("../img/icons.png"); width: 61px; height: 90px; background-position: -65px -376px; }
+.partners .partners__icon19 { display: block; background-image: url("../img/icons.png"); width: 73px; height: 90px; background-position: -155px -282px; }
 .partners .partners__icon20 { display: block; background-image: url("../img/icons.png"); width: 65px; height: 90px; background-position: -450px -282px; }
 .partners .partners__icon21 { display: block; background-image: url("../img/icons.png"); width: 75px; height: 90px; background-position: -370px -188px; }
 .partners .partners__icon22 { display: block; background-image: url("../img/icons.png"); width: 74px; height: 90px; background-position: 0px -282px; }
-.partners .partners__icon23 { display: block; background-image: url("../img/icons.png"); width: 61px; height: 90px; background-position: -65px -376px; }
+.partners .partners__icon23 { display: block; background-image: url("../img/icons.png"); width: 61px; height: 90px; background-position: 0px -376px; }
 .partners .partners__icon24 { display: block; background-image: url("../img/icons.png"); width: 66px; height: 90px; background-position: -450px -188px; }
 .partners .partners__icon25 { display: block; background-image: url("../img/icons.png"); width: 94px; height: 90px; background-position: 0px 0px; }
 .partners .partners__icon26 { display: block; background-image: url("../img/icons.png"); width: 58px; height: 90px; background-position: -193px -376px; }
 .partners .partners__icon27 { display: block; background-image: url("../img/icons.png"); width: 68px; height: 90px; background-position: -307px -282px; }
-.partners .partners__icon28 { display: block; background-image: url("../img/icons.png"); width: 67px; height: 90px; background-position: -450px 0px; }
+.partners .partners__icon28 { display: block; background-image: url("../img/icons.png"); width: 67px; height: 90px; background-position: -379px -282px; }
 .partners .partners__icon29 { display: block; background-image: url("../img/icons.png"); width: 77px; height: 90px; background-position: -285px -94px; }
 
 .butovo { overflow: hidden; width: 100%; max-width: 1000px; margin: 7% auto; position: relative; }
@@ -225,6 +225,28 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .butovo__img { width: 100%; max-width: 830px; margin: auto; }
 .butovo__text { width: 100%; max-width: 640px; margin: 4% auto; }
 .butovo__text p { font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 2; text-align: left; }
+
+.neighbors { max-width: 600px; margin: 4% auto; }
+.neighbors__title { margin-bottom: 2%; font-size: 25px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.04; text-align: left; }
+.neighbors__back { font-size: 13px; font-family: "Geneva"; color: #0097d1; text-decoration: none; border-bottom: 1px dotted #0097d1; }
+
+.house, .storey, .flat { overflow: hidden; width: 100%; margin: 5% 0; padding-left: 5%; }
+.house__title, .storey__title, .flat__title { position: relative; float: left; clear: both; margin-bottom: 2%; font-size: 16px; color: #494c50; line-height: 1.625; text-align: left; font-family: "Geneva"; border-bottom: 1px dotted #494c50; }
+.house__icon, .storey__icon, .flat__icon { position: absolute; display: block; left: -17px; top: 5px; background-image: url("../img/icons.png"); width: 11px; height: 11px; background-position: -264px -188px; }
+.house__choose, .storey__choose, .flat__choose { float: right; width: 30%; text-align: left; font-size: 11px; font-family: "Geneva"; color: #9b9b9b; line-height: 2.6; }
+.house__conteiner, .storey__conteiner, .flat__conteiner { width: 70%; float: left; clear: left; }
+.house__section, .storey__section, .flat__section { position: relative; width: 20%; margin-right: 5%; float: left; }
+.house__section input[type="radio"], .storey__section input[type="radio"], .flat__section input[type="radio"] { position: absolute; visibility: hidden; }
+.house__section input[type="radio"]:checked ~ label, .storey__section input[type="radio"]:checked ~ label, .flat__section input[type="radio"]:checked ~ label { color: #fff; background-color: #0097d2; border-bottom: 1px solid #0097d2; }
+.house__section label, .storey__section label, .flat__section label { display: block; position: relative; text-align: center; border-bottom: 1px dotted #0097d2; cursor: pointer; font-size: 14px; font-weight: bold; font-family: "Geneva"; color: #0097d2; line-height: 1.857; }
+
+.flat__section { width: 15%; margin-right: 5%; }
+
+.storey__title, .flat__title { border-bottom: none; }
+
+.register { max-width: 660px; margin: 4% auto; }
+.register__title { margin-bottom: 2%; font-size: 25px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.04; }
+.register__line { border: none; margin: 0; height: 1px; width: 100%; background-color: #dadada; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1220px){
