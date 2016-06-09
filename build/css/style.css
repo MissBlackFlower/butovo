@@ -240,7 +240,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .house__section input[type="radio"]:checked ~ label, .storey__section input[type="radio"]:checked ~ label, .flat__section input[type="radio"]:checked ~ label { color: #fff; background-color: #0097d2; border-bottom: 1px solid #0097d2; }
 .house__section label, .storey__section label, .flat__section label { display: block; position: relative; text-align: center; border-bottom: 1px dotted #0097d2; cursor: pointer; font-size: 14px; font-weight: bold; font-family: "Geneva"; color: #0097d2; line-height: 1.857; }
 
-.flat__section { width: 15%; margin-right: 5%; }
+.storey__section, .flat__section { width: 15%; margin-right: 5%; }
 
 .storey__title, .flat__title { border-bottom: none; }
 
