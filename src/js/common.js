@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	$('.storey__section input').on('change', function(){
+		var floor = $(this).attr('value')
+		for (var n = 0; n <= 9; n++) {
+				    if (floor == 1) {
+				        document.getElementById('label'+(n+1)).innerText = ('№'+(n+1));
+				    }  else {
+				          document.getElementById('label'+(n+1)).innerText = ('№'+(floor-1)+n);
+								}
+				}
+	});
 	$('.apartments__conteiner').slick({
   dots: false,
   infinite: true,
