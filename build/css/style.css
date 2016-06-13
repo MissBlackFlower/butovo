@@ -258,10 +258,15 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .register__name a { text-decoration: none; border-bottom: 1px dotted #0097d2; cursor: pointer; font-size: 18px; font-weight: bold; font-family: "Geneva"; color: #0097d2; line-height: 1.857; }
 .register__mail { float: left; width: 30%; padding-top: 4%; text-align: right; }
 .register__mail a { text-decoration: none; font-size: 12px; font-family: "Geneva"; color: #9b9b9b; line-height: 2.6; }
+
+#map { margin: auto; width: 736px; height: 580px; background-image: url(../img/region_bg.png); }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+
 @media only screen and (max-width: 1220px){
  .apartments__conteiner{ width: 760px; } }
+
 @media only screen and (max-width: 840px){
  .apartments__conteiner{ width: 380px; } }
 
