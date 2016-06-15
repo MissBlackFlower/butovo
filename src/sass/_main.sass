@@ -520,9 +520,34 @@
       +Geneva
       color: rgb(155, 155, 155)
       line-height: 2.6
+
+// стили для карты региона svg
 #map
   margin: auto
   clear:both
-  width: 736px
-  height: 580px
+  width: 720px
+  height: 500px
   background-image: url(../img/region_bg.png)
+#shadow
+  opacity: 0.15
+  fill: #2B2C2C
+.houses
+  fill: #F69F2B
+.not-active
+  fill: #949494
+.nambers
+  fill: #FFFFFF
+  font-family: Arial
+  font-weight: bold
+  font-size: 13px
+@for $i from 1 through 12
+  #emblem#{$i}
+    fill: url(#emblem#{$i}_g)
+  #house#{$i}:hover
+    stroke: #61c1f3
+    stroke-width: 3px
+    cursor: pointer
+    #emblem#{$i}
+      stroke: #fff
+      stroke-width: 0.3px
+      fill: url(#emblem#{$i}_blue)

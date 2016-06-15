@@ -58,5 +58,3 @@ $(document).ready(function() {
 	});
 });
 
-=include paths.js
-=include init.js

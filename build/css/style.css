@@ -259,14 +259,79 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .register__mail { float: left; width: 30%; padding-top: 4%; text-align: right; }
 .register__mail a { text-decoration: none; font-size: 12px; font-family: "Geneva"; color: #9b9b9b; line-height: 2.6; }
 
-#map { margin: auto; width: 736px; height: 580px; background-image: url(../img/region_bg.png); }
+#map { margin: auto; width: 720px; height: 500px; background-image: url(../img/region_bg.png); }
 
+#shadow { opacity: 0.15; fill: #2B2C2C; }
+
+.houses { fill: #F69F2B; }
+
+.not-active { fill: #949494; }
+
+.nambers { fill: #FFFFFF; font-family: Arial; font-weight: bold; font-size: 13px; }
+
+#emblem1 { fill: url(#emblem1_g); }
+
+#house1:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house1:hover #emblem1 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem1_blue); }
+
+#emblem2 { fill: url(#emblem2_g); }
+
+#house2:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house2:hover #emblem2 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem2_blue); }
+
+#emblem3 { fill: url(#emblem3_g); }
+
+#house3:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house3:hover #emblem3 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem3_blue); }
+
+#emblem4 { fill: url(#emblem4_g); }
+
+#house4:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house4:hover #emblem4 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem4_blue); }
+
+#emblem5 { fill: url(#emblem5_g); }
+
+#house5:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house5:hover #emblem5 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem5_blue); }
+
+#emblem6 { fill: url(#emblem6_g); }
+
+#house6:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house6:hover #emblem6 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem6_blue); }
+
+#emblem7 { fill: url(#emblem7_g); }
+
+#house7:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house7:hover #emblem7 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem7_blue); }
+
+#emblem8 { fill: url(#emblem8_g); }
+
+#house8:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house8:hover #emblem8 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem8_blue); }
+
+#emblem9 { fill: url(#emblem9_g); }
+
+#house9:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house9:hover #emblem9 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem9_blue); }
+
+#emblem10 { fill: url(#emblem10_g); }
+
+#house10:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house10:hover #emblem10 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem10_blue); }
+
+#emblem11 { fill: url(#emblem11_g); }
+
+#house11:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house11:hover #emblem11 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem11_blue); }
+
+#emblem12 { fill: url(#emblem12_g); }
+
+#house12:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
+#house12:hover #emblem12 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem12_blue); }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
-
 @media only screen and (max-width: 1220px){
  .apartments__conteiner{ width: 760px; } }
-
 @media only screen and (max-width: 840px){
  .apartments__conteiner{ width: 380px; } }
 
