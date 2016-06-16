@@ -75,7 +75,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .out { padding: 0 15px; margin: 0 auto; max-width: 1500px; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
 
-.up-img { overflow: hidden; width: 100%; max-width: 1230px; margin: auto; padding-bottom: 1.7%; }
+.up-img { overflow: hidden; width: 100%; max-width: 1085px; margin: auto; padding-bottom: 1.7%; }
 .up-img img { float: left; }
 
 .header, .main-header { overflow: hidden; width: 100%; }
@@ -103,13 +103,16 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .header__link:hover .header__name { border-bottom: dotted 1px #b9babb; }
 .header__name { border-bottom: solid 1px #b9babb; }
 
-.main-header { max-width: 1065px; }
-.main-header__account { width: 30%; max-width: 245px; float: right; padding: 1.2%; -webkit-border-radius: 6px; border-radius: 6px; background-color: #f3f3f3; }
+.main-header { max-width: 1195px; margin: auto; }
+.main-header__menu { padding-left: 3.7%; }
+.main-header__list { padding-right: 3%; }
+.main-header__cell { margin-top: 9px; }
+.main-header__account { width: 28%; max-width: 245px; margin-left: 2%; float: left; padding: 1.2%; -webkit-border-radius: 6px; border-radius: 6px; background-color: #f3f3f3; }
 .main-header__info { float: left; width: 70%; }
 .main-header__icon { float: left; background-image: url("../img/icons.png"); width: 21px; height: 21px; background-position: -279px -376px; margin-right: 8px; }
 .main-header__login { float: left; width: 100%; font-family: "ProximaNovaBold"; font-size: 13px; line-height: 24px; color: #46484c; }
-.main-header__personal { float: left; width: 100%; padding-left: 29px; font-family: "ProximaNovaSemibold"; font-size: 12px; color: #2b2b2b; }
-.main-header__exit { float: right; width: 30%; text-align: right; line-height: 21px; font-family: "ProximaNovaSemibold"; font-size: 13px; color: #2b2b2b; }
+.main-header__personal { float: left; width: 100%; padding-left: 29px; font-family: "ProximaNovaSemibold"; font-size: 11px; color: #2b2b2b; }
+.main-header__exit { float: right; width: 30%; text-align: right; line-height: 21px; font-family: "ProximaNovaSemibold"; font-size: 12px; color: #2b2b2b; }
 
 .footer { width: 100%; position: relative; }
 .footer__line { position: absolute; width: 100%; top: 10%; margin: 0; border: none; height: 1px; background-color: #dadada; z-index: -1; }
@@ -219,16 +222,19 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .partners .partners__icon28 { display: block; background-image: url("../img/icons.png"); width: 67px; height: 90px; background-position: -379px -282px; }
 .partners .partners__icon29 { display: block; background-image: url("../img/icons.png"); width: 77px; height: 90px; background-position: -285px -94px; }
 
-.butovo { overflow: hidden; width: 100%; max-width: 1000px; margin: 7% auto; position: relative; }
-.butovo__logo { overflow: hidden; position: absolute; top: 0; left: 0; }
-.butovo__titles { position: absolute; top: 10px; right: 0; width: 40%; }
+.butovo { width: 100%; max-width: 1175px; margin: 6% auto; position: relative; }
+.butovo__logo { overflow: hidden; position: absolute; top: -12px; left: 170px; }
+.butovo__titles { position: absolute; top: -4px; right: 0; width: 40%; }
+.butovo__uptitle { font-size: 26px; }
+.butovo__title { font-size: 45px; }
 .butovo__img { width: 100%; max-width: 830px; margin: auto; }
-.butovo__text { width: 100%; max-width: 640px; margin: 4% auto; }
+.butovo__text { width: 100%; max-width: 615px; margin: 2% auto; }
 .butovo__text p { font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 2; text-align: left; }
 
-.neighbors { max-width: 600px; margin: 4% auto; }
+.neighbors { max-width: 610px; margin: 6% auto 4.3% auto; }
 .neighbors__title { margin-bottom: 2%; font-size: 25px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.04; text-align: left; }
-.neighbors__back { font-size: 13px; font-family: "Geneva"; color: #0097d1; text-decoration: none; border-bottom: 1px dotted #0097d1; }
+.neighbors__back { font-size: 11px; font-family: "Geneva"; color: #0097d1; text-decoration: none; border-bottom: 1px dotted #0097d1; }
+.neighbors__back:hover { border-bottom: 1px solid #0097d1; }
 
 .house, .storey, .flat { overflow: hidden; width: 100%; margin: 5% 0; padding-left: 5%; }
 .house__title, .storey__title, .flat__title { position: relative; float: left; clear: both; margin-bottom: 2%; font-size: 16px; color: #494c50; line-height: 1.625; text-align: left; font-family: "Geneva"; border-bottom: 1px dotted #494c50; }
@@ -239,6 +245,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .house__section input[type="radio"], .storey__section input[type="radio"], .flat__section input[type="radio"] { position: absolute; visibility: hidden; }
 .house__section input[type="radio"]:checked ~ label, .storey__section input[type="radio"]:checked ~ label, .flat__section input[type="radio"]:checked ~ label { color: #fff; background-color: #0097d2; border-bottom: 1px solid #0097d2; }
 .house__section label, .storey__section label, .flat__section label { display: block; position: relative; text-align: center; border-bottom: 1px dotted #0097d2; cursor: pointer; font-size: 14px; font-weight: bold; font-family: "Geneva"; color: #0097d2; line-height: 1.857; }
+.house__section label:hover, .storey__section label:hover, .flat__section label:hover { border-bottom: 1px solid #0097d2; }
 
 .storey__section, .flat__section { width: 15%; margin-right: 5%; }
 
@@ -256,8 +263,10 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .register__name { float: left; width: 50%; padding: 1.5% 0; }
 .register__name p { font-family: "Geneva"; font-size: 11px; color: #b0b5bb; }
 .register__name a { text-decoration: none; border-bottom: 1px dotted #0097d2; cursor: pointer; font-size: 18px; font-weight: bold; font-family: "Geneva"; color: #0097d2; line-height: 1.857; }
+.register__name a:hover { border-bottom: 1px solid #0097d2; }
 .register__mail { float: left; width: 30%; padding-top: 4%; text-align: right; }
 .register__mail a { text-decoration: none; font-size: 12px; font-family: "Geneva"; color: #9b9b9b; line-height: 2.6; }
+.register__mail a:hover { color: #0097d2; }
 
 #map { margin: auto; width: 720px; height: 500px; background-image: url(../img/region_bg.png); }
 
@@ -328,6 +337,14 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 
 #house12:hover { stroke: #61c1f3; stroke-width: 3px; cursor: pointer; }
 #house12:hover #emblem12 { stroke: #fff; stroke-width: 0.3px; fill: url(#emblem12_blue); }
+
+.house-queue { margin: auto; width: 100%; max-width: 575px; margin-bottom: 8%; }
+.house-queue__conteiner { width: 100%; padding-top: 2%; }
+.house-queue__title { font-size: 16px; color: #494c50; line-height: 1.625; font-family: "Geneva"; }
+.house-queue__list { width: 100%; }
+.house-queue__item { display: inline-block; padding: 1%; }
+.house-queue__links { font-size: 14px; font-family: "Geneva"; color: #0097d2; line-height: 1.857; text-decoration: none; border-bottom: 1px dashed #0097d2; }
+.house-queue__links:hover { border-bottom: 1px solid #0097d2; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1220px){

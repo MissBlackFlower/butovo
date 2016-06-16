@@ -63,7 +63,7 @@ body
 .up-img
 	overflow: hidden
 	width: 100%
-	max-width: 1230px
+	max-width: 1085px
 	margin: auto
 	padding-bottom: 1.7%
 	img
@@ -109,11 +109,19 @@ body
 // end header
 .main-header
 	@extend .header
-	max-width: 1065px
+	max-width: 1195px
+	margin: auto
+	&__menu
+		padding-left: 3.7%
+	&__list
+		padding-right: 3%
+	&__cell
+		margin-top: 9px
 	&__account
-		width: 30%
+		width: 28%
 		max-width: 245px
-		float: right
+		margin-left: 2%
+		float: left
 		padding: 1.2%
 		border-radius: 6px
 		background-color: rgb(243, 243, 243)
@@ -136,7 +144,7 @@ body
 		width: 100%
 		padding-left: 29px
 		+prox-s
-		font-size: 12px
+		font-size: 11px
 		color: $gray_dark
 	&__exit
 		float: right
@@ -144,7 +152,7 @@ body
 		text-align: right
 		line-height: 21px
 		+prox-s
-		font-size: 13px
+		font-size: 12px
 		color: $gray_dark
 // footer
 .footer
