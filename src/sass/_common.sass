@@ -52,14 +52,18 @@ $gray_dark: #2b2b2b
 // body
 body
 	+font-smoothing(antialiased)
+	vertical-scrollbar: outside
 
 // common block
 // center
 .out
+	width: 100%
+	max-width: 1500px
 	padding: 0 15px
 	margin: 0 auto
-	max-width: 1500px
 	+clr
+	+r(400)
+		padding: 0
 .up-img
 	overflow: hidden
 	width: 100%
@@ -68,10 +72,49 @@ body
 	padding-bottom: 1.7%
 	img
 		float: left
+// btn-menu
+.btn-menu
+	float: right
+	position: relative
+	width: 30px
+	height: 25px
+	background: transparent
+	display: none
+	+r(1150)
+		display: block
+	&:before,
+	&:after,
+	span
+		position: absolute
+		content: ''
+		top: 10px
+		left: 0
+		right: 0
+		height: 5px
+		background: #61c1f3
+		transition: transform .3s
+	&:before
+		top: 0
+	&:after
+		top: 21px
+	span
+		will-change: opacity
+		transition: opacity .3s, transform .3s
 // header
 .header
-	overflow: hidden
 	width: 100%
+	&.is-active
+		.btn-menu
+			&:before
+				transform: translateY(11px) rotate(45deg)
+			&:after
+				transform: translateY(-12px) rotate(-45deg)
+				+r(768)
+					transform: translateY(-10px) rotate(-45deg)
+			span
+				transform: translate3d(0,0,0)
+				opacity: 0
+				transform: scale(0)
 	&__logo
 		float: left
 		width: 20%
@@ -106,6 +149,26 @@ body
 				border-bottom: dotted 1px #b9babb
 	&__name
 		border-bottom: solid 1px #b9babb
+	// адаптив для header
+	+r(1150)
+		&__menu
+			float: none
+			width: 100%
+			padding-left: 0
+			text-align: right
+			clear: both
+		&__list
+			float: none
+			width: 200px
+			padding-right: 0
+			margin: auto
+			clear: both
+			text-align: left
+	+r(680)
+		&__logo
+			width: 40%
+			img
+				float: left
 // end header
 .main-header
 	@extend .header

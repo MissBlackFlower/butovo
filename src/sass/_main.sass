@@ -3,9 +3,11 @@
   overflow: hidden
   padding-top: 4.5%
   background: url(../img/sky.png) top left no-repeat
+  background-size: 100%
 .apartments
   overflow: hidden
   position: relative
+  float: left
   width: 100%
   padding: 55px 0 45px 0
   &__conteiner
@@ -16,10 +18,14 @@
       width: 760px
     +r(840)
       width: 380px
+    +r(400)
+      width: 320px
   &__item
     overflow: inherit
     width: 380px
     float: left
+    +r(400)
+      width: 320px
   &__titles
     display: block
     width: 286px
@@ -173,6 +179,8 @@
       &:before
         content: " "
         background-image: url(../img/right_arrow.png)
+    +r(400)
+      display: none
 .content
   overflow: hidden
   width: 100%
@@ -196,9 +204,13 @@
         content: "\2013"
     a
       color: #2f96cb
+    +r(680)
+      width: 100%
   &__sidebar
     width: 35%
     float: right
+    +r(680)
+      width: 100%
   &__technical
     overflow: hidden
     width: 100%
@@ -278,6 +290,8 @@
     font-size: 13px
     color: rgb(43, 43, 43)
     line-height: 2
+    +r(380)
+      clear: both
   &__conteiner
     overflow: hidden
     width: 100%
@@ -287,6 +301,8 @@
     float: left
     padding-right: 2%
     text-align: left
+    +r(480)
+      width: 100%
   &__date
     +Geneva
     font-size: 12px
@@ -324,6 +340,11 @@
     line-height: 1.2
     text-align: left
     +Geneva
+    +r(980)
+      width: 20%
+      height: 120px
+    +r(560)
+      width: 50%
   @for $i from 1 through 29
     .partners__icon#{$i}
       display: block
