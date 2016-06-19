@@ -102,6 +102,7 @@ body
 		transition: opacity .3s, transform .3s
 // header
 .header
+	overflow: hidden
 	width: 100%
 	&.is-active
 		.btn-menu
@@ -188,6 +189,11 @@ body
 		padding: 1.2%
 		border-radius: 6px
 		background-color: rgb(243, 243, 243)
+		+r(1150)
+			overflow: hidden
+			margin-left: 0
+			float: none
+			margin: 20px auto
 	&__info
 		float: left
 		width: 70%

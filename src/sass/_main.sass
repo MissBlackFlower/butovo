@@ -360,21 +360,33 @@
     position: absolute
     top: -12px
     left: 170px
+    +r(1000)
+      left: 50px
+    +r(650)
+      left: 0
   &__titles
     position: absolute
     top: -4px
     right: 0
     width: 40%
+    +r(800)
+      width: 50%
   &__uptitle
     @extend .apartments__uptitle
     font-size: 26px
+    +r(650)
+      font-size: 21px
   &__title
     @extend .apartments__title
     font-size: 45px
+    +r(650)
+      font-size: 40px
   &__img
     width: 100%
     max-width: 830px
     margin: auto
+    img
+      width: 100%
   &__text
     width: 100%
     max-width: 615px

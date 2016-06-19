@@ -84,7 +84,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .btn-menu:after { top: 21px; }
 .btn-menu span { will-change: opacity; -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
 
-.header, .main-header { width: 100%; }
+.header, .main-header { overflow: hidden; width: 100%; }
 .header.is-active .btn-menu:before, .is-active.main-header .btn-menu:before { -webkit-transform: translateY(11px) rotate(45deg); -ms-transform: translateY(11px) rotate(45deg); transform: translateY(11px) rotate(45deg); }
 .header.is-active .btn-menu:after, .is-active.main-header .btn-menu:after { -webkit-transform: translateY(-12px) rotate(-45deg); -ms-transform: translateY(-12px) rotate(-45deg); transform: translateY(-12px) rotate(-45deg); }
 .header.is-active .btn-menu span, .is-active.main-header .btn-menu span { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
@@ -237,6 +237,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .butovo__uptitle { font-size: 26px; }
 .butovo__title { font-size: 45px; }
 .butovo__img { width: 100%; max-width: 830px; margin: auto; }
+.butovo__img img { width: 100%; }
 .butovo__text { width: 100%; max-width: 615px; margin: 2% auto; }
 .butovo__text p { font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 2; text-align: left; }
 
@@ -361,11 +362,16 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 @media only screen and (max-width: 1150px){
  .btn-menu{ display: block; }
  .header__menu{ float: none; width: 100%; padding-left: 0; text-align: right; clear: both; }
- .header__list{ float: none; width: 200px; padding-right: 0; margin: auto; clear: both; text-align: left; } }
+ .header__list{ float: none; width: 200px; padding-right: 0; margin: auto; clear: both; text-align: left; }
+ .main-header__account{ overflow: hidden; margin-left: 0; float: none; margin: 20px auto; } }
+@media only screen and (max-width: 1000px){
+ .butovo__logo{ left: 50px; } }
 @media only screen and (max-width: 980px){
  .partners__link{ width: 20%; height: 120px; } }
 @media only screen and (max-width: 840px){
  .apartments__conteiner{ width: 380px; } }
+@media only screen and (max-width: 800px){
+ .butovo__titles{ width: 50%; } }
 @media only screen and (max-width: 768px){
  .header.is-active .btn-menu:after, .is-active.main-header .btn-menu:after{ -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); transform: translateY(-10px) rotate(-45deg); } }
 @media only screen and (max-width: 680px){
@@ -373,6 +379,10 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .header__logo img{ float: left; }
  .content__text{ width: 100%; }
  .content__sidebar{ width: 100%; } }
+@media only screen and (max-width: 650px){
+ .butovo__logo{ left: 0; }
+ .butovo__uptitle{ font-size: 21px; }
+ .butovo__title{ font-size: 40px; } }
 @media only screen and (max-width: 560px){
  .partners__link{ width: 50%; } }
 @media only screen and (max-width: 480px){
