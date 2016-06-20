@@ -391,6 +391,11 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .butovo__titles{ position: static; float: right; width: 50%; } }
 @media only screen and (max-width: 560px){
  .partners__link{ width: 50%; } }
+@media only screen and (max-width: 550px){
+ .house__choose, .storey__choose, .flat__choose{ width: 100%; }
+ .house__conteiner, .storey__conteiner, .flat__conteiner{ width: 100%; }
+ .register__name{ width: 80%; }
+ .register__mail{ width: 100%; } }
 @media only screen and (max-width: 480px){
  .news__item{ width: 100%; }
  .butovo__uptitle{ font-size: 16px; }
