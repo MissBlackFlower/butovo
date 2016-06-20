@@ -20,12 +20,38 @@
       width: 380px
     +r(400)
       width: 320px
-  &__item
-    overflow: inherit
-    width: 380px
-    float: left
+  &__arrows
+    .slick-left,
+    .slick-right
+      @extend .slick-prev
+      margin-top: -20px
+      height: 40px
+      width: 40px
+      cursor: pointer
+      opacity: 0.5
+      background-color: transparent
+      &:before
+        width: 40px
+        height: 40px
+        content: " "
+        background-color: transparent
+        background-image: url(../img/left_arrow.png)
+      &:hover
+        opacity: 1
+    .slick-right
+      @extend .slick-next
+      &:before
+        content: " "
+        background-image: url(../img/right_arrow.png)
     +r(400)
-      width: 320px
+      display: none
+
+.item
+  overflow: hidden
+  width: 380px
+  float: left
+  +r(400)
+    width: 320px
   &__titles
     display: block
     width: 286px
@@ -42,6 +68,7 @@
     +prox-b
     font-size: 40px
     line-height: 0.85
+    text-decoration: none
     color: rgb(248, 178, 43)
     font-weight: bold
     text-align: left
@@ -52,7 +79,7 @@
     height: 245px
     &:hover
       cursor: pointer
-      .apartments__closer
+      .item__closer
         display: block
   &__big-img
     display: block
@@ -74,14 +101,38 @@
     left: 0
     bottom: 2px
     border-radius: 100%
-  &__form
-    overflow: hidden
-    display: block
+  &__contact
     width: 286px
-    margin: 15px auto
-    padding: 18px 22px 12px 22px
-    background-color: #f0f0f0
-    border-radius: 10px
+    margin: auto
+    text-align: center
+  &__tel
+    +prox-b
+    font-size: 21px
+    color: rgb(43, 43, 43)
+    margin-bottom: 5px
+    span
+      +prox-r
+      font-size: 13px
+  &__icon
+    display: inline-block
+    height: 26px
+    width: 20px
+    vertical-align: middle
+    +s(location)
+  &__prompt
+    padding-left: 10px
+    font-size: 11px
+    +Geneva
+    color: rgb(43, 43, 43)
+
+.form
+  overflow: hidden
+  display: block
+  width: 286px
+  margin: 15px auto
+  padding: 18px 22px 12px 22px
+  background-color: #f0f0f0
+  border-radius: 10px
   &__mail,
   &__password
     position: relative
@@ -120,7 +171,7 @@
       font-size: 11px
       +Geneva
       color: rgba(43, 43, 43, 0.4)
-  &__button
+  &__enter
     float: right
     height: 34px
     width: 108px
@@ -131,56 +182,7 @@
     +prox-b
     color: rgb(27, 26, 26)
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7)
-  &__contact
-    width: 286px
-    margin: auto
-    text-align: center
-  &__tel
-    +prox-b
-    font-size: 21px
-    color: rgb(43, 43, 43)
-    margin-bottom: 5px
-    span
-      +prox-r
-      font-size: 13px
-  &__icon
-    height: 26px
-    width: 20px
-    display: inline-block
-    vertical-align: middle
-    i
-      display: inline-block
-      +s(location)
-  &__prompt
-    padding-left: 10px
-    font-size: 11px
-    +Geneva
-    color: rgb(43, 43, 43)
-  &__arrows
-    .slick-left,
-    .slick-right
-      @extend .slick-prev
-      margin-top: -20px
-      height: 40px
-      width: 40px
-      cursor: pointer
-      opacity: 0.5
-      background-color: transparent
-      &:before
-        width: 40px
-        height: 40px
-        content: " "
-        background-color: transparent
-        background-image: url(../img/left_arrow.png)
-      &:hover
-        opacity: 1
-    .slick-right
-      @extend .slick-next
-      &:before
-        content: " "
-        background-image: url(../img/right_arrow.png)
-    +r(400)
-      display: none
+
 .content
   overflow: hidden
   width: 100%
@@ -270,6 +272,7 @@
       color: rgba(43, 43, 43, 0.4)
       line-height: 2.167
       text-align: left
+
 .news
   overflow: hidden
   width: 100%
@@ -319,6 +322,7 @@
     font-size: 12px
     color: rgba(43, 43, 43, 0.4)
     line-height: 2.167
+
 .partners
   overflow: hidden
   width: 100%
@@ -349,6 +353,7 @@
     .partners__icon#{$i}
       display: block
       +s(partners_#{$i})
+
 // Стили для butovo-main
 .butovo
   width: 100%
@@ -384,14 +389,14 @@
       float: right
       width: 50%
   &__uptitle
-    @extend .apartments__uptitle
+    @extend .item__uptitle
     font-size: 26px
     +r(650)
       font-size: 21px
     +r(480)
       font-size: 16px
   &__title
-    @extend .apartments__title
+    @extend .item__title
     font-size: 45px
     +r(650)
       font-size: 40px

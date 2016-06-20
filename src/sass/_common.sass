@@ -44,9 +44,6 @@
 =prox-r
 	font-family: "ProximaNovaRegular"
 // variables
-$white: #fff
-$black: #000
-$red: #ff0000
 $gray_dark: #2b2b2b
 
 // body
@@ -65,57 +62,19 @@ body
 	+r(400)
 		padding: 0
 .up-img
-	overflow: hidden
-	width: 100%
-	max-width: 1085px
-	margin: auto
-	padding-bottom: 1.7%
-	img
-		float: left
-// btn-menu
-.btn-menu
-	float: right
-	position: relative
-	width: 30px
-	height: 25px
-	background: transparent
-	display: none
+	display: block
+	+s(header_up-img)
+	margin-bottom: 1.7%
+	margin-left: 5%
+	+clr
 	+r(1150)
-		display: block
-	&:before,
-	&:after,
-	span
-		position: absolute
-		content: ''
-		top: 10px
-		left: 0
-		right: 0
-		height: 5px
-		background: #61c1f3
-		transition: transform .3s
-	&:before
-		top: 0
-	&:after
-		top: 21px
-	span
-		will-change: opacity
-		transition: opacity .3s, transform .3s
+		display: none
 // header
 .header
 	overflow: hidden
 	width: 100%
-	&.is-active
-		.btn-menu
-			&:before
-				transform: translateY(11px) rotate(45deg)
-			&:after
-				transform: translateY(-12px) rotate(-45deg)
-				+r(768)
-					transform: translateY(-10px) rotate(-45deg)
-			span
-				transform: translate3d(0,0,0)
-				opacity: 0
-				transform: scale(0)
+	+r(1150)
+		display: none
 	&__logo
 		float: left
 		width: 20%

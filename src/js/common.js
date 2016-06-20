@@ -34,37 +34,24 @@ $(document).ready(function() {
     },
   ]
 	});
-// показывать кнопку меню при ширине окна меньше 1000
-	$('body').ready(function(){
-		if ($('body').width() <= 1150) {
-			$('.js-header').removeClass('is-active');
-			$('.js-header-nav').slideUp(200);
-		}
-	});
-// открыть навигацию при клике на кнопку меню
-	$('.js-btn-menu').on('click', function(event){
-		var this_ = $(this),
-			parent = this_.parents('.js-header'),
-			nav = parent.find('.js-header-nav');
-		if (!parent.hasClass('is-active')){
-			parent.addClass('is-active');
-			nav.slideDown(200);
-		}
-		else {
-			parent.removeClass('is-active');
-			nav.slideUp(200);
-		}
-		event.stopPropagation();
-	});
 
-	$h = $('.js-header').offset().top;
-	$(window).scroll(function(){
-        // Если прокрутили скролл ниже макушки блока, включаем фиксацию
-		if ( ($(window).scrollTop() > $h) && ($('body').width() <= 1150) ) {
-	        	$(".js-header").css({"padding": "10px" , "position":"fixed", "top":0 , "left":0 , "z-index":50 , "background-color": "#fff" , "border-bottom":"solid 1px #61c1f3"});
-	        }else{
-	            //Иначе возвращаем всё назад. Тут вы вносите свои данные
-	        $(".js-header").css({"position":"static", "padding": "0", "border-bottom":"none"});
-	        }
-	  });
+	$(function(){
+		$('#main-menu').slicknav({
+			prependTo:'#mobileMenu',
+			closeOnClick: true
+		});
+
+		$(document).on('click', "#main-menu .scroll", function(e) {
+	        e.preventDefault();
+			var h = $('#nav').outerHeight();
+			if (!$('#main-menu').is(":visible")) {
+				h = $('.slicknav_menu .slicknav_btn').outerHeight();
+			}
+			var link = this;
+			$.smoothScroll({
+				offset: -h,
+				scrollTarget: link.hash
+			});
+		});
+	});
 });
