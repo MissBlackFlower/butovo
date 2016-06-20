@@ -363,7 +363,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .btn-menu{ display: block; }
  .header__menu{ float: none; width: 100%; padding-left: 0; text-align: right; clear: both; }
  .header__list{ float: none; width: 200px; padding-right: 0; margin: auto; clear: both; text-align: left; }
- .main-header__account{ overflow: hidden; margin-left: 0; float: none; margin: 20px auto; } }
+ .main-header__account{ overflow: hidden; margin-left: 0; float: none; margin: 20px auto; width: 100%; } }
 @media only screen and (max-width: 1000px){
  .butovo__logo{ left: 50px; } }
 @media only screen and (max-width: 980px){
@@ -374,6 +374,8 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .butovo__titles{ width: 50%; } }
 @media only screen and (max-width: 768px){
  .header.is-active .btn-menu:after, .is-active.main-header .btn-menu:after{ -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); transform: translateY(-10px) rotate(-45deg); } }
+@media only screen and (max-width: 720px){
+ #map{ width: 100%; height: auto; background-size: contain; } }
 @media only screen and (max-width: 680px){
  .header__logo{ width: 40%; }
  .header__logo img{ float: left; }
@@ -383,15 +385,22 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .butovo__logo{ left: 0; }
  .butovo__uptitle{ font-size: 21px; }
  .butovo__title{ font-size: 40px; } }
+@media only screen and (max-width: 580px){
+ .butovo__logo{ position: static; float: left; width: 50%; padding-right: 5%; }
+ .butovo__logo img{ width: 100%; max-width: 182px; }
+ .butovo__titles{ position: static; float: right; width: 50%; } }
 @media only screen and (max-width: 560px){
  .partners__link{ width: 50%; } }
 @media only screen and (max-width: 480px){
- .news__item{ width: 100%; } }
+ .news__item{ width: 100%; }
+ .butovo__uptitle{ font-size: 16px; }
+ .butovo__title{ font-size: 36px; } }
 @media only screen and (max-width: 400px){
  .out{ padding: 0; }
  .apartments__conteiner{ width: 320px; }
  .apartments__item{ width: 320px; }
- .apartments__arrows{ display: none; } }
+ .apartments__arrows{ display: none; }
+ .butovo__text{ padding: 3%; text-align: justify; } }
 @media only screen and (max-width: 380px){
  .news__all{ clear: both; } }
 

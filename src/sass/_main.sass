@@ -364,6 +364,14 @@
       left: 50px
     +r(650)
       left: 0
+    +r(580)
+      position: static
+      float: left
+      width: 50%
+      padding-right: 5%
+      img
+        width: 100%
+        max-width: 182px
   &__titles
     position: absolute
     top: -4px
@@ -371,16 +379,24 @@
     width: 40%
     +r(800)
       width: 50%
+    +r(580)
+      position: static
+      float: right
+      width: 50%
   &__uptitle
     @extend .apartments__uptitle
     font-size: 26px
     +r(650)
       font-size: 21px
+    +r(480)
+      font-size: 16px
   &__title
     @extend .apartments__title
     font-size: 45px
     +r(650)
       font-size: 40px
+    +r(480)
+      font-size: 36px
   &__img
     width: 100%
     max-width: 830px
@@ -397,6 +413,10 @@
       color: rgb(43, 43, 43)
       line-height: 2
       text-align: left
+    +r(400)
+      padding: 3%
+      text-align: justify
+
 // Стили для butovo-house
 .neighbors
   max-width: 610px
@@ -570,6 +590,10 @@
   width: 720px
   height: 500px
   background-image: url(../img/region_bg.png)
+  +r(720)
+    width: 100%
+    height: auto
+    background-size: contain
 #shadow
   opacity: 0.15
   fill: #2B2C2C
