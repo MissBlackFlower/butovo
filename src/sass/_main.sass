@@ -224,6 +224,7 @@
     float: right
     +r(680)
       width: 100%
+      padding: 5% 0
   &__technical
     overflow: hidden
     width: 100%
@@ -299,6 +300,9 @@
     +prox-s
     font-size: 20px
     color: rgb(43, 43, 43)
+    +r(380)
+      width: 100%
+      text-align: center
   &__all
     float: right
     padding-right: 2%
@@ -308,6 +312,9 @@
     line-height: 2
     +r(380)
       clear: both
+      width: 100%
+      text-align: center
+      padding: 10px 0
   &__conteiner
     overflow: hidden
     width: 100%
@@ -319,17 +326,26 @@
     text-align: left
     +r(480)
       width: 100%
+      padding-bottom: 15px
+    +r(380)
+      text-align: center
   &__date
     +Geneva
     font-size: 12px
     font-style: italic
     color: #1a9dd7
     line-height: 1.667
+    +r(380)
+      float: left
+      width: 100%
+      text-align: left
   &__text
     color: rgb(43, 43, 43)
     +Geneva
     font-size: 12px
     line-height: 1.667
+    +r(380)
+      text-align: justify
   &__link
     +Geneva
     font-size: 12px
@@ -348,6 +364,9 @@
     +prox-s
     font-size: 20px
     color: rgb(43, 43, 43)
+    +r(380)
+      width: 100%
+      text-align: center
   &__conteiner
     overflow: hidden
     width: 100%
@@ -357,7 +376,7 @@
     font-size: 11px
     color: rgb(43, 43, 43)
     line-height: 1.2
-    text-align: left
+    text-align: center
     +Geneva
     &:hover
       color: #2f96cb
@@ -369,6 +388,7 @@
   @for $i from 1 through 29
     .partners__icon#{$i}
       display: block
+      margin: auto
       +s(partners_#{$i})
 
 // Стили для butovo-main
@@ -397,11 +417,11 @@
       img
         width: 100%
         max-width: 182px
-    +r(360)
-      width: 100%
+    +r(500)
+      display: none
   &__titles
     position: absolute
-    top: 0
+    top: 10px
     right: 0
     width: 40%
     +r(800)
@@ -410,29 +430,25 @@
       position: static
       width: 60%
       float: left
-      padding: 0 2%
-    +r(360)
-      clear: both
+      padding: 3.5% 2% 0 2%
+    +r(500)
       width: 100%
-      text-align: center
   &__uptitle
     @extend .item__uptitle
     font-size: 26px
     +r(650)
       font-size: 21px
-    +r(480)
-      font-size: 16px
-    +r(360)
-      display: inline-block
   &__title
     @extend .item__title
     font-size: 45px
     +r(650)
       font-size: 40px
-    +r(480)
-      font-size: 36px
-    +r(360)
+  &__uptitle,
+  &__title
+    +r(500)
       display: inline-block
+      width: 100%
+      text-align: center
   &__img
     width: 100%
     max-width: 830px
@@ -449,7 +465,7 @@
       color: rgb(43, 43, 43)
       line-height: 2
       text-align: left
-    +r(400)
+    +r(500)
       padding: 3%
       text-align: justify
 
@@ -464,21 +480,30 @@
     color: rgb(43, 43, 43)
     line-height: 1.04
     text-align: left
+    +r(400)
+      width: 100%
+      text-align: center
   &__back
     font-size: 11px
     +Geneva
     color: #0097d1
     text-decoration: none
-    border-bottom: 1px dotted #0097d1
+    span
+      border-bottom: 1px dotted #0097d1
     &:hover
-      border-bottom: 1px solid #0097d1
+      span
+        border-bottom: 1px solid #0097d1
+    +r(400)
+      display: inline-block
+      width: 100%
+      text-align: center
 .house,
 .storey,
 .flat
   overflow: hidden
   width: 100%
   margin: 5% 0
-  padding-left: 5%
+  padding: 0 5%
   &__title
     position: relative
     float: left
@@ -504,8 +529,14 @@
     +Geneva
     color: rgb(155, 155, 155)
     line-height: 2.6
+    p::before
+      content: '\2014'
     +r(550)
       width: 100%
+    +r(400)
+      text-align: center
+      p::before
+        content: ' '
   &__conteiner
     width: 70%
     float: left
@@ -546,6 +577,9 @@
 .flat
   &__title
     border-bottom: none
+    +r(400)
+      width: 100%
+      text-align: center
 .register
   max-width: 660px
   margin: 4% auto
@@ -555,6 +589,10 @@
     +Geneva
     color: rgb(43, 43, 43)
     line-height: 1.04
+    +r(400)
+      width: 100%
+      text-align: center
+      padding: 0 2%
   &__storey
     width: 100%
     position: relative
@@ -590,6 +628,12 @@
       border: 1px solid rgb(218,218,218)
       outline: 1px solid #fff
       outline-offset: -2px
+    +r(400)
+      width: 100%
+      text-align: center
+      img
+        float: none
+        display: inline-block
   &__name
     float: left
     width: 50%
@@ -611,6 +655,10 @@
       line-height: 1.857
       &:hover
         border-bottom: 1px solid rgb(0, 151, 210)
+    +r(400)
+      width: 100%
+      text-align: center
+      padding-bottom: 0
   &__mail
     float: left
     width: 30%
@@ -618,6 +666,9 @@
     text-align: right
     +r(550)
       width: 100%
+    +r(400)
+      text-align: center
+      padding: 2% 0 5% 0
     a
       text-decoration: none
       font-size: 12px
@@ -626,7 +677,11 @@
       line-height: 2.6
       &:hover
         color: rgb(0, 151, 210)
-
+      &::after
+        content: '\00A0\2192'
+      +r(400)
+        &::after
+          content: ''
 // стили для карты региона svg
 #map
   margin: auto
@@ -662,6 +717,7 @@
       stroke: #fff
       stroke-width: 0.3px
       fill: url(#emblem#{$i}_blue)
+// стили для butovo-region
 .house-queue
   margin: auto
   width: 100%
@@ -675,11 +731,18 @@
     color: rgb(73, 76, 80)
     line-height: 1.625
     +Geneva
+    +r(400)
+      width: 100%
+      text-align: center
+      margin-top: 5%
   &__list
     width: 100%
   &__item
     display: inline-block
     padding: 1%
+    +r(400)
+      width: 48%
+      text-align: center
   &__links
     font-size: 14px
     +Geneva
