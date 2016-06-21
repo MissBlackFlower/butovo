@@ -550,5 +550,6 @@ $(document).ready(function() {
 		prependTo:'#mobileMenu',
 		closeOnClick: true
 	});
+
 });
 

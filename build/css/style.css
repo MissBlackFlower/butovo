@@ -423,7 +423,7 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
  .apartments__conteiner{ width: 760px; } }
 @media only screen and (max-width: 1150px){
  .up-img{ display: none; }
- #mobileMenu{ left: 0; top: 0; display: block; position: fixed; width: 100%; z-index: 100; background-color: #fff; }
+ #mobileMenu{ display: block; left: 0; top: 0; position: fixed; width: 100%; z-index: 100; background-color: #fff; }
  .header, .main-header{ display: none; }
  .header__menu{ width: 100%; text-align: left; }
  .header__list{ width: 320px; float: none; margin: auto; padding-right: 0; }
