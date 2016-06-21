@@ -1,6 +1,6 @@
 //colors
 $color_0: rgba(27, 164, 225, 0.75)
-$color_btn: #222
+$color_btn: #1ca9e8
 $color_text: #2b2b2b
 $color_shadow: #2b2b2b
 $color_bg: rgba(255, 255, 255, 0.1)
@@ -21,10 +21,10 @@ $color_hover_text: #222
 		text-shadow: 0 1px 3px $color_shadow
 
 	.slicknav_icon-bar
-		background-color: $color_text
+		background-color: #fff
 
 .slicknav_btn
-	margin: 5px 5px 6px
+	margin: 5px 5px 20px
 	text-decoration: none
 	text-shadow: 0 1px 1px $color_0
 	-webkit-border-radius: 4px
@@ -34,16 +34,17 @@ $color_hover_text: #222
 
 .slicknav_nav
 	color: $color_text
+	background-color: #fff
+	width: 100%
 	margin: 0
 	padding: 0
 	font-size: 0.875em
 	list-style: none
-	overflow: hidden
+	overflow: auto
 	ul
 		list-style: none
 		overflow: hidden
 		padding: 0
-		margin: 0 0 0 20px
 
 	.slicknav_row
 		padding: 5px 10px
@@ -53,21 +54,17 @@ $color_hover_text: #222
 			-moz-border-radius: 6px
 			border-radius: 6px
 			background: $color_hover_bg
-			color: $color_text
-
+			color: #f9cd06
 
 	a
+		display: inline-block
 		padding: 5px 10px
 		margin: 2px 5px
 		text-decoration: none
-		color: $color_text
 		&:hover
 			-webkit-border-radius: 6px
 			-moz-border-radius: 6px
 			border-radius: 6px
-			background: $color_hover_bg
-			color: $color_hover_text
-
 	.slicknav_txtnode
 		margin-left: 15px
 

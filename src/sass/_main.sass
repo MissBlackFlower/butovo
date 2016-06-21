@@ -4,6 +4,11 @@
   padding-top: 4.5%
   background: url(../img/sky.png) top left no-repeat
   background-size: 100%
+  +r(1150)
+    background: none
+    #mobileMenu
+      background: url(../img/sky.png) top center no-repeat #fff
+      background-size: 70%
 .apartments
   overflow: hidden
   position: relative
@@ -360,10 +365,13 @@
   max-width: 1175px
   margin: 6% auto
   position: relative
+  overflow: hidden
+  +r(1150)
+    margin-top: 0
   &__logo
     overflow: hidden
     position: absolute
-    top: -12px
+    top: 0
     left: 170px
     +r(1000)
       left: 50px
@@ -371,23 +379,30 @@
       left: 0
     +r(580)
       position: static
+      padding: 0 2%
+      width: 40%
       float: left
-      width: 50%
-      padding-right: 5%
       img
         width: 100%
         max-width: 182px
+    +r(360)
+      width: 100%
   &__titles
     position: absolute
-    top: -4px
+    top: 0
     right: 0
     width: 40%
     +r(800)
       width: 50%
     +r(580)
       position: static
-      float: right
-      width: 50%
+      width: 60%
+      float: left
+      padding: 0 2%
+    +r(360)
+      clear: both
+      width: 100%
+      text-align: center
   &__uptitle
     @extend .item__uptitle
     font-size: 26px
@@ -395,6 +410,8 @@
       font-size: 21px
     +r(480)
       font-size: 16px
+    +r(360)
+      display: inline-block
   &__title
     @extend .item__title
     font-size: 45px
@@ -402,6 +419,8 @@
       font-size: 40px
     +r(480)
       font-size: 36px
+    +r(360)
+      display: inline-block
   &__img
     width: 100%
     max-width: 830px

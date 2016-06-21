@@ -35,23 +35,8 @@ $(document).ready(function() {
   ]
 	});
 
-	$(function(){
-		$('#main-menu').slicknav({
-			prependTo:'#mobileMenu',
-			closeOnClick: true
-		});
-
-		$(document).on('click', "#main-menu .scroll", function(e) {
-	        e.preventDefault();
-			var h = $('#nav').outerHeight();
-			if (!$('#main-menu').is(":visible")) {
-				h = $('.slicknav_menu .slicknav_btn').outerHeight();
-			}
-			var link = this;
-			$.smoothScroll({
-				offset: -h,
-				scrollTarget: link.hash
-			});
-		});
+	$('#main-menu').slicknav({
+		prependTo:'#mobileMenu',
+		closeOnClick: true
 	});
 });

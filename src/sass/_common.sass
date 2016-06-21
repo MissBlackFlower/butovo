@@ -69,6 +69,16 @@ body
 	+clr
 	+r(1150)
 		display: none
+#mobileMenu
+	display: none
+	+r(1150)
+		left: 0
+		top: 0
+		display: block
+		position: fixed
+		width: 100%
+		z-index: 100
+		background-color: #fff
 // header
 .header
 	overflow: hidden
@@ -94,9 +104,6 @@ body
 	&__icon
 		display: inline-block
 		vertical-align: middle
-	@each $s in key,graf,chat,diagram,letter,news,case,query,roller,card,info,speak,smile,build
-		.icon_#{$s}
-			+s(#{$s})
 	&__link
 		padding-left: 6px
 		+Geneva
@@ -112,23 +119,36 @@ body
 	// адаптив для header
 	+r(1150)
 		&__menu
-			float: none
 			width: 100%
-			padding-left: 0
-			text-align: right
-			clear: both
-		&__list
-			float: none
-			width: 200px
-			padding-right: 0
-			margin: auto
-			clear: both
 			text-align: left
-	+r(680)
-		&__logo
-			width: 40%
-			img
-				float: left
+		&__list
+			width: 320px
+			float: none
+			margin: auto
+			padding-right: 0
+	+r(480)
+		&__menu
+			width: 100%
+.logo
+	float: left
+	width: 100%
+	// padding: 0 0 5% 5%
+	display: none
+	img
+		width: 100%
+		max-width: 155px
+	+r(1150)
+		display: block
+		clear: both
+		margin-bottom: 70px
+		img
+			position: absolute
+			left: 5px
+			top: 0
+			z-index: 200
+@each $s in key,graf,chat,diagram,letter,news,case,query,roller,card,info,speak,smile,build
+	.icon_#{$s}
+		+s(#{$s})
 // end header
 .main-header
 	@extend .header
