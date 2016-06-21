@@ -96,6 +96,8 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slicknav_menu .slicknav_icon-bar { background-color: #fff; }
 
 .slicknav_btn { margin: 5px 5px 20px; text-decoration: none; text-shadow: 0 1px 1px rgba(27, 164, 225, 0.75); -webkit-border-radius: 4px; border-radius: 4px; background-color: #1ca9e8; }
+.slicknav_btn:hover { -webkit-box-shadow: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.75); box-shadow: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.75); }
+.slicknav_btn:active { -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 76, 110, 0.75); box-shadow: inset 0px 0px 7px 0px rgba(0, 76, 110, 0.75); }
 
 .slicknav_nav { color: #2b2b2b; background-color: #fff; width: 100%; margin: 0; padding: 0; font-size: 0.875em; list-style: none; overflow: auto; }
 .slicknav_nav ul { list-style: none; overflow: hidden; padding: 0; }
@@ -130,9 +132,9 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .header__list { float: left; padding-right: 2%; }
 .header__cell { margin-top: 7px; }
 .header__icon { display: inline-block; vertical-align: middle; }
-.header__link { padding-left: 6px; font-family: "Geneva"; font-size: 12px; line-height: 1.5; color: #2b2b2b; text-decoration: none; }
+.header__link { font-family: "Geneva"; font-size: 12px; line-height: 1.5; color: #2b2b2b; text-decoration: none; }
 .header__link:hover .header__name { border-bottom: dotted 1px #b9babb; }
-.header__name { border-bottom: solid 1px #b9babb; }
+.header__name { margin-left: 6px; border-bottom: solid 1px #b9babb; }
 
 .logo { float: left; width: 100%; display: none; }
 .logo img { width: 100%; max-width: 155px; }
@@ -220,6 +222,8 @@ body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -m
 .form__help { width: 50%; float: left; text-align: left; }
 .form__help a { display: inline-block; width: 100%; font-size: 11px; font-family: "Geneva"; color: rgba(43, 43, 43, 0.4); }
 .form__enter { float: right; height: 34px; width: 108px; -webkit-border-radius: 6px; border-radius: 6px; background: #ffe565; background: -webkit-gradient(linear, left top, left bottom, from(#ffe565), to(#fec356)); background: -webkit-linear-gradient(top, #ffe565 0%, #fec356 100%); background: linear-gradient(to bottom, #ffe565 0%, #fec356 100%); font-size: 15px; font-family: "ProximaNovaBold"; color: #1b1a1a; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7); }
+.form__enter:hover { -webkit-box-shadow: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.75); box-shadow: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.75); }
+.form__enter:active { -webkit-box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.5); box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.5); }
 
 .content { overflow: hidden; width: 100%; max-width: 1140px; margin: auto; padding: 0 2% 3.5% 2%; }
 .content__text { width: 65%; float: left; padding: 0 3%; font-size: 13px; font-family: "Geneva"; color: #2b2b2b; line-height: 1.5; text-align: left; }
